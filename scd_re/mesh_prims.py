@@ -15,6 +15,7 @@ Textured primitives carry PSX GPU codes: u16 clut, u16 tpage at fixed offsets.
 We scan each mesh for plausible (clut,tpage) pairs and report the page coords.
 """
 import struct, os, sys
+from scd import rdt_index
 
 DATA = game_path("DC1", 'english/Data')
 if not os.path.isdir(DATA):
@@ -53,7 +54,7 @@ def get_rdt(room):
         if pos + size > len(b): break
         al = (size + SECT - 1) & ~(SECT - 1)
         ents.append((typ, size, pos, al)); pos += al
-    typ, size, off, al = ents[-1]
+    typ, size, off, al = ents[rdt_index(b)]
     payload = b[off:off + size]
     return lzss(payload) if typ == 7 else payload
 

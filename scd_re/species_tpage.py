@@ -22,6 +22,7 @@ NOT any EXE per-species table.
 Usage: python species_tpage.py        # dumps all 7 catalog rows
 """
 import struct, os, json
+from scd import rdt_index
 from collections import Counter
 
 DATA = game_path("DC1", "english/Data")
@@ -80,7 +81,7 @@ def entries(room):
 
 def get_rdt(room):
     b, ents = entries(room)
-    i, typ, size, x, y, w, h, off = ents[-1]
+    i, typ, size, x, y, w, h, off = ents[rdt_index(b)]
     return lzss(b[off:off + size]) if typ == 7 else b[off:off + size]
 
 

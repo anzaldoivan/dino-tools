@@ -11,6 +11,7 @@ Found layout (16B tri / 20B quad), both share:
   +0x0e  u16 tpage  (texture-page ref; 0x8b/0x9b for the Pteranodon)
 """
 import struct, os, sys
+from scd import rdt_index
 from collections import Counter
 
 DATA = game_path("DC1", 'english/Data')
@@ -50,7 +51,7 @@ def get_rdt(room):
         if pos + size > len(b): break
         al = (size + SECT - 1) & ~(SECT - 1)
         ents.append((typ, size, pos, al)); pos += al
-    typ, size, off, al = ents[-1]
+    typ, size, off, al = ents[rdt_index(b)]
     return lzss(b[off:off + size]) if typ == 7 else b[off:off + size]
 
 

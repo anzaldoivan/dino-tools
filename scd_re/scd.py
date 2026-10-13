@@ -50,12 +50,25 @@ def parse_entries(b):
     return out
 
 
+def rdt_index(b):
+    """Index of the room-data entry: the type-0/7 entry whose header load address
+    (y & 0x8000 -> ((y & 0x7FFF) << 16) | x | 0x80000000) is PSX_RDT_BASE. It is the
+    last entry in 107 rooms; sound entries follow it in the other 41. Falls back to
+    the last entry when no entry carries that address."""
+    n = len(parse_entries(b))
+    for i in range(n - 1, -1, -1):
+        typ, _, x, y = struct.unpack_from('<IIHH', b, i * 16)
+        if typ in (0, 7) and y & 0x8000 and (((y & 0x7FFF) << 16) | x | 0x80000000) == PSX_RDT_BASE:
+            return i
+    return n - 1
+
+
 def get_rdt(path):
     b = open(path, 'rb').read()
     ents = parse_entries(b)
     if not ents:
         return None, None
-    typ, size, off, al = ents[-1]
+    typ, size, off, al = ents[rdt_index(b)]
     payload = b[off:off + size]
     return (lzss(payload) if typ == 7 else payload), typ
 
