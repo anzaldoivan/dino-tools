@@ -4,17 +4,17 @@ _path_sys.path.insert(0, str(_ToolPath(__file__).resolve().parents[1]))
 from tool_paths import game_path
 """Shared DC1 SCD walker (init script via rec+0x14 func table).
 
-Lengths: scd_opcode_table.json + control-flow lengths resolved 2026-06-19 from
-DINO.exe handler pc-advances. 0x28 and 0x5a are variable.
+Lengths and names: scd_opcode_table.json (handler-derived). 0x28 and 0x5a are variable.
 """
 import json, struct, os
 
 PSX_RDT_BASE = 0x80100000
 _HERE = os.path.dirname(__file__)
 T = {int(k, 16): v['len'] for k, v in json.load(open(os.path.join(_HERE, 'scd_opcode_table.json'))).items()}
-# control-flow encoded lengths resolved from handler pc-advances (DINO.exe):
-T.update({0x0a: 4, 0x0c: 4, 0x0f: 4, 0x10: 2, 0x11: 2,
-          0x31: 4, 0x54: 4, 0x57: 8, 0x59: 20})
+# The JSON is the single source for lengths and names (the control-flow lengths that used to be
+# patched in here are in the table). 0x28 and 0x5a are variable: see oplen().
+NAMES = {int(k, 16): v['name'] for k, v in json.load(open(os.path.join(_HERE, 'scd_opcode_table.json'))).items()
+         if 'name' in v}
 OP28 = {0: 48, 1: 40, 2: 32, 3: 36, 4: 44, 5: 32, 6: 32, 7: 52, 8: 32, 9: 32, 0xa: 32, 0xb: 32}
 
 
