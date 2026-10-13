@@ -13,7 +13,7 @@ valid tree (parent[i] < i, root negative). Humanoid vs raptor is decided by matc
 the exact parent tuple to the references.
 """
 import struct, os
-from scd import parse_entries, lzss
+from scd import parse_entries, lzss, rdt_index
 
 DATA = game_path("DC1", 'english/Data')
 BONE_COUNT_OFF, BONE_ARRAY_OFF, BONE_STRIDE = 0x14, 0x18, 0x14
@@ -41,7 +41,7 @@ def ref_pose(room, model_ptr):
     """(bone_count, parent_tuple, full_pose) of a known in-RDT model."""
     b = open(f"{DATA}/st{room}.dat", "rb").read()
     ents = parse_entries(b)
-    typ, size, off, al = ents[-1]
+    typ, size, off, al = ents[rdt_index(b)]
     rdt = lzss(b[off:off + size]) if typ == 7 else b[off:off + size]
     o = model_ptr - 0x80100000
     bc = struct.unpack_from("<I", rdt, o + BONE_COUNT_OFF)[0]
@@ -99,7 +99,7 @@ if __name__ == "__main__":
     # raptor ref: first 0x20 enemy in st10e
     from enemies import enemy_records
     b = open(f"{DATA}/st10e.dat", "rb").read()
-    ents = parse_entries(b); typ, size, off, al = ents[-1]
+    ents = parse_entries(b); typ, size, off, al = ents[rdt_index(b)]
     rdt = lzss(b[off:off + size])
     rap_ptr = next(enemy_records(rdt))[5]
     rap_bc, RAPTOR, RAP_POSE = ref_pose("10e", rap_ptr)

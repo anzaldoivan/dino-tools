@@ -1,9 +1,20 @@
 from pathlib import Path
 import json
+import subprocess
 import xml.etree.ElementTree as ET
 
+def tracked_projects(root):
+    # Tracked files only: ignored local scratch projects are not part of the snapshot.
+    # Outside a git checkout (an exported tree, a test fixture) every project counts.
+    git = subprocess.run(['git', '-C', str(root), 'ls-files', '-z', '--', '*.csproj'],
+                         capture_output=True, text=True)
+    if git.returncode != 0:
+        return list(root.rglob('*.csproj'))
+    return [root / name for name in git.stdout.split('\0') if name]
+
+
 def check(root):
-    for project in root.rglob('*.csproj'):
+    for project in tracked_projects(root):
         references = {n.attrib['Include']: n.attrib['Version'] for n in ET.parse(project).getroot().iter('PackageReference')}
         lock = project.with_name('packages.lock.json')
         if not lock.is_file():

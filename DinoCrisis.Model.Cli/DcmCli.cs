@@ -23,6 +23,7 @@ public static class DcmCli
             return verb switch
             {
                 "info" => Info(args, o),
+                "clips" => Clips(args, o),
                 "list" => ListDir(args, o),
                 "dump" => Dump(args, o),
                 "validate" => Validate(args, o),
@@ -43,6 +44,7 @@ public static class DcmCli
         o.WriteLine("dcmtool — read/inspect/export Dino Crisis 1 & 2 DCM models");
         o.WriteLine("usage:");
         o.WriteLine("  dcmtool info      <file>                  list the models in a package");
+        o.WriteLine("  dcmtool clips     <file>                  list the motion clips in a package (offset, stored count)");
         o.WriteLine("  dcmtool list      <dir>                   scan a Data directory for model-bearing packages");
         o.WriteLine("  dcmtool dump      <file> [index]          per-part table for one model (default 0)");
         o.WriteLine("  dcmtool validate  <file>                  re-check every model's structural invariants");
@@ -89,6 +91,20 @@ public static class DcmCli
             o.WriteLine($"  [{i}] {m.Variant.Game}  {m.Parts.Count} parts  {m.Triangles.Count} tris  " +
                         $"{m.Quads.Count} quads  {m.VertexCount} verts  base 0x{m.LoadBase:X8}");
         }
+        return 0;
+    }
+
+    private static int Clips(string[] args, TextWriter o)
+    {
+        if (args.Length < 2) return Usage(o);
+        var models = Load(args[1], o, out bool any);
+        if (!any) return 3;
+        // Every model of a package shares one decompressed buffer; scan it once.
+        var first = models[0];
+        var clips = DcmMotion.ScanClips(first.Raw, first.LoadBase);
+        o.WriteLine($"{Path.GetFileName(args[1])}: {clips.Count} clip(s)");
+        foreach (var c in clips)
+            o.WriteLine($"  0x{c.Offset:X5}  count {c.StoredCount}  frames at 0x{c.DataOffset:X5}");
         return 0;
     }
 
