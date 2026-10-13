@@ -11,6 +11,7 @@ Found layout (16B tri / 20B quad), both share:
   +0x0e  u16 tpage  (texture-page ref; 0x8b/0x9b for the Pteranodon)
 """
 import struct, os, sys
+from scd import rdt_index
 from collections import Counter
 
 DATA = game_path("DC1", 'english/Data')
@@ -50,7 +51,7 @@ def get_rdt(room):
         if pos + size > len(b): break
         al = (size + SECT - 1) & ~(SECT - 1)
         ents.append((typ, size, pos, al)); pos += al
-    typ, size, off, al = ents[-1]
+    typ, size, off, al = ents[rdt_index(b)]
     return lzss(b[off:off + size]) if typ == 7 else b[off:off + size]
 
 
@@ -131,7 +132,7 @@ def analyze(room, mptr, name):
 
 
 if __name__ == "__main__":
-    # Pteranodon (donor, st400) vs a native raptor (st102 slot0 is RaptorHeavy)
+    # Pteranodon (donor, st400) vs a native raptor (st102 slot0 is the Velociraptor)
     analyze("400", 0x80109bd8, "Pteranodon (donor)")
     # find st102 raptor model ptr from its enemy record via model_footprint? use known native.
     # st10e raptor (cont.16): 0x80110e70
