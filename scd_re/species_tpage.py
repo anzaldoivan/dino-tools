@@ -22,6 +22,7 @@ NOT any EXE per-species table.
 Usage: python species_tpage.py        # dumps all 7 catalog rows
 """
 import struct, os, json
+from scd import rdt_index
 from collections import Counter
 
 DATA = game_path("DC1", "english/Data")
@@ -33,8 +34,8 @@ SECT = 2048
 # (category, bones, name, donor_room, model_ptr, place_op)  — model ptrs found
 # via npc_census.py (0x20: model@+0x10) and check_install.py (0x59: model@+0x04).
 SPECIES = [
-    (1, 15, "Velociraptor",                  "10e", 0x80110e70, 0x20),
-    (2, 21, "Raptor (heavy rig)",            "401", 0x801081c0, 0x20),
+    (1, 15, "Humanoid",                      "10e", 0x80110e70, 0x20),
+    (2, 21, "Velociraptor",                  "401", 0x801081c0, 0x20),
     (3, 20, "Tyrannosaurus (boss rig)",      "60a", 0x80114144, 0x20),
     (4, 10, "Tyrannosaurus (Chief's rig)",   "202", 0x8010f5d0, 0x20),
     (5, 7,  "Swarm (small dino)",            "307", 0x8010e39c, 0x20),
@@ -80,7 +81,7 @@ def entries(room):
 
 def get_rdt(room):
     b, ents = entries(room)
-    i, typ, size, x, y, w, h, off = ents[-1]
+    i, typ, size, x, y, w, h, off = ents[rdt_index(b)]
     return lzss(b[off:off + size]) if typ == 7 else b[off:off + size]
 
 

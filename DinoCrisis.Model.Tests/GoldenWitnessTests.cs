@@ -20,7 +20,7 @@ public sealed class GoldenWitnessTests
 
     [Dc1Theory("st605.dat", "st106.dat")]
     [InlineData("st605.dat", 22, 334, 57)]   // Therizinosaurus
-    [InlineData("st106.dat", 15, 282, 179)]  // Velociraptor
+    [InlineData("st106.dat", 15, 282, 179)]  // Humanoid (NPC, 15-bone human rig)
     public void Dc1_RoomEnemyModel_MatchesSection7(string file, int parts, int triTotal, int quadTotal)
     {
         var models = DcmLocator.FromDc1Package(File.ReadAllBytes(Dc1(file)));
