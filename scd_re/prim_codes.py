@@ -132,7 +132,7 @@ def analyze(room, mptr, name):
 
 
 if __name__ == "__main__":
-    # Pteranodon (donor, st400) vs a native raptor (st102 slot0 is RaptorHeavy)
+    # Pteranodon (donor, st400) vs a native raptor (st102 slot0 is the Velociraptor)
     analyze("400", 0x80109bd8, "Pteranodon (donor)")
     # find st102 raptor model ptr from its enemy record via model_footprint? use known native.
     # st10e raptor (cont.16): 0x80110e70

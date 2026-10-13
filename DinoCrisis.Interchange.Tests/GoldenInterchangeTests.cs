@@ -15,7 +15,7 @@ public sealed class GoldenInterchangeTests
 {
     [Dc1Theory("st605.dat", "st106.dat")]
     [InlineData("st605.dat", 22, 334, 57)]   // Therizinosaurus
-    [InlineData("st106.dat", 15, 282, 179)]  // Velociraptor
+    [InlineData("st106.dat", 15, 282, 179)]  // Humanoid (NPC, 15-bone human rig)
     public void Real_dcm_converts_to_md1_preserving_rig_and_poly_budget(
         string file, int parts, int triTotal, int quadTotal)
     {
@@ -59,7 +59,7 @@ public sealed class GoldenInterchangeTests
 
     [Dc1Theory("st605.dat", "st106.dat")]
     [InlineData("st605.dat", 22, 334, 57)]   // Therizinosaurus
-    [InlineData("st106.dat", 15, 282, 179)]  // Velociraptor
+    [InlineData("st106.dat", 15, 282, 179)]  // Humanoid (NPC, 15-bone human rig)
     public void Real_dcm_skeleton_emits_emr_whose_FK_matches_the_dcm_FK(
         string file, int parts, int triTotal, int quadTotal)
     {
@@ -88,7 +88,7 @@ public sealed class GoldenInterchangeTests
     [Dc1Fact("st106.dat")]
     public void Real_dcm_assembles_into_re2_and_re3_donors_preserving_part_count()
     {
-        // Velociraptor: 15 parts.
+        // Humanoid (15-bone human rig): 15 parts.
         var models = DcmLocator.FromDc1Package(File.ReadAllBytes(FixtureGate.Dc1File("st106.dat")));
         var model = models.FirstOrDefault(m => m.Header.PartCount == 15 && m.Header.TriangleCount == 282 && m.Header.QuadCount == 179);
         Assert.NotNull(model);
