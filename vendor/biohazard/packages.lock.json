@@ -4,11 +4,11 @@
     ".NETStandard,Version=v2.0": {
       "AFSLib": {
         "type": "Direct",
-        "requested": "[1.1.1, )",
-        "resolved": "1.1.1",
-        "contentHash": "9BRyM6zrqAbpGTVG60xGTLJ2RnIgg40W8O8oBJVgGRCThMzzl8oO1RStfTU4PncA0sqP4mXpDRkWsC1XTspTdw==",
+        "requested": "[1.1.2, )",
+        "resolved": "1.1.2",
+        "contentHash": "utlvZaWunHFDKaZmSJJSopYeN/8ma6DJkSsIGPrQDqTeUAhkHNAyKC6Mxy38X6QFZCcgrRIcWuDgyFndeUnLoQ==",
         "dependencies": {
-          "Reloaded.Memory": "9.3.2"
+          "Reloaded.Memory": "9.4.3"
         }
       },
       "NETStandard.Library": {
@@ -71,8 +71,8 @@
       },
       "Reloaded.Memory": {
         "type": "Transitive",
-        "resolved": "9.3.2",
-        "contentHash": "WF4AAzzvLqYzIhoWsILfB10A+blkQZ9VyQ/OYYxsUsYxxUj7lzYbcLpMQQ1ONnCdWHlIbFWO4Cq1DmKvWdP23g==",
+        "resolved": "9.4.3",
+        "contentHash": "j+pev0mS1guirfo4auPfclXKJKm9N0i3CIEY1WbLo46awhRwVsP2GuD7YFTtxRVUHZzjnWJLFhqP4zh/v7mf6A==",
         "dependencies": {
           "System.Memory": "4.5.5",
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
