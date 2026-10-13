@@ -10,6 +10,7 @@ tpage@+0xe. Stop as soon as CLUT@+0xa leaves the model's CLUT marker set
 invariant on packet 2, so a long clean run is strong proof of the layout.
 """
 import struct, os
+from scd import rdt_index
 from collections import Counter
 
 DATA = game_path("DC1", 'english/Data')
@@ -48,7 +49,7 @@ def get_rdt(room):
         if typ > 8 or size == 0: break
         if pos + size > len(b): break
         ents.append((typ, size, pos, (size + SECT - 1) & ~(SECT - 1))); pos += (size + SECT - 1) & ~(SECT - 1)
-    typ, size, off, al = ents[-1]
+    typ, size, off, al = ents[rdt_index(b)]
     return lzss(b[off:off + size]) if typ == 7 else b[off:off + size]
 
 

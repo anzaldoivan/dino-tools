@@ -67,12 +67,13 @@ BONE_COUNT_OFF = 0x14
 BONE_ARRAY_OFF = 0x18
 BONE_STRIDE = 0x14
 SPECIES_BY_BONES = {
-    15: 'Velociraptor',     # cat 1
-    21: 'Raptor(heavy)',    # cat 2
-    20: 'LargeGround',      # cat 3
-    10: 'Tyrannosaurus',    # cat 4
+    15: 'Humanoid',         # cat 1 - the human rig (NPCs, corpses); cont.97
+    21: 'Velociraptor',     # cat 2 - the common raptor (was 'Raptor(heavy)')
+    20: 'Tyrannosaurus',    # cat 3 - boss rig (was 'LargeGround'; cont.23)
+    10: 'Tyrannosaurus',    # cat 4 - Chief's Room rig
     7:  'Swarm',            # cat 5
     18: 'Pteranodon',       # cat 7
+    22: 'Therizinosaurus',  # cat 8 (placed by 0x59 / 0x5B)
 }
 
 

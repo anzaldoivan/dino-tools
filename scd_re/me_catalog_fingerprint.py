@@ -36,7 +36,7 @@ def classify(buf_hits_pose):
 if __name__ == "__main__":
     _, _, HUM = E.ref_pose("50c", 0x8010fa7c)
     b = open(f"{E.DATA}/st10e.dat", "rb").read(); ents = E.parse_entries(b)
-    t, s, o, a = ents[-1]
+    t, s, o, a = ents[E.rdt_index(b)]
     _, _, RAP = E.ref_pose("10e", next(enemy_records(E.lzss(b[o:o + s])))[5])
 
     names = name_table()
