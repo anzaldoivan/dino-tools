@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
+    <PackageReference Include="xunit" Version="2.9.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DinoCrisis.Interchange\DinoCrisis.Interchange.csproj" />
+    <ProjectReference Include="..\DinoCrisis.Model\DinoCrisis.Model.csproj" />
+  </ItemGroup>
+
+  <!-- Reuse the Model test project's clean-room synthetic DCM blob builder (single source of truth,
+       no copyrighted bytes) by linking the file in. -->
+  <ItemGroup>
+    <Compile Include="..\DinoCrisis.Model.Tests\SyntheticBlob.cs" Link="SyntheticBlob.cs" />
+  </ItemGroup>
+
+  <!-- Historical/manual probes persist beside the tests for local investigation, but must never
+       run through ordinary test discovery because many write durable artifacts under exports/. -->
+  <ItemGroup>
+    <Compile Remove="_ZZ_*.cs" />
+    <Compile Include="_ZZ_Dc1InjectReginaJill.cs" Condition="'$(RunJillPrivateProbe)' == 'true'" />
+  </ItemGroup>
+
+</Project>

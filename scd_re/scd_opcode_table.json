@@ -1,0 +1,686 @@
+{
+ "0x0": {
+  "handler": 4862112,
+  "len": 1,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x1": {
+  "handler": 4862211,
+  "len": 4,
+  "kind": "TASK-SPAWN: run event sub s16[+2] as a parallel VM task s8[+1] (-1=auto-alloc via 0x4A30B6); task array 0x6B4660 stride 0xB0 (pc+0x58, stack+0xAC); gated on GetFlag(10,9); cont.50",
+  "operand_end": 0
+ },
+ "0x2": {
+  "handler": 4862532,
+  "len": 4,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x3": {
+  "handler": 4862589,
+  "len": 4,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x4": {
+  "handler": 4862614,
+  "len": 4,
+  "kind": "ctrlflow(len from live capture)",
+  "operand_end": 0
+ },
+ "0x5": {
+  "handler": 4862711,
+  "len": 4,
+  "kind": "GOTO-SUB: ctx->pc = [obj+0x268]+table[s16[+2]], call-stack reset (+0xAC=+0x5C); gated on GetFlag(10,9); cont.50",
+  "operand_end": 0
+ },
+ "0x6": {
+  "handler": 4862940,
+  "len": 4,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x7": {
+  "handler": 4863008,
+  "len": 4,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x8": {
+  "handler": 4863090,
+  "len": 4,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x9": {
+  "handler": 4863173,
+  "len": 8,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0xa": {
+  "handler": 4863272,
+  "len": 4,
+  "kind": "ctrlflow:loop-next (off16 @+2); validated x671",
+  "operand_end": 0
+ },
+ "0xb": {
+  "handler": 4863404,
+  "len": 4,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0xc": {
+  "handler": 4863482,
+  "len": 4,
+  "kind": "ctrlflow:goto (off16 @+2); validated x2",
+  "operand_end": 0
+ },
+ "0xd": {
+  "handler": 4863522,
+  "len": 4,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0xe": {
+  "handler": 4863544,
+  "len": 4,
+  "kind": "ctrlflow(len from live capture)",
+  "operand_end": 0
+ },
+ "0xf": {
+  "handler": 4863640,
+  "len": 4,
+  "kind": "ctrlflow:gosub (target @+2, ret=pc+4); validated x451",
+  "operand_end": 0
+ },
+ "0x10": {
+  "handler": 4863873,
+  "len": 2,
+  "kind": "ctrlflow:return (no operand); pc<-call stack; validated x26",
+  "operand_end": 0
+ },
+ "0x11": {
+  "handler": 4863933,
+  "len": 2,
+  "kind": "end/nop (no operand); never seen in corpus",
+  "operand_end": 0
+ },
+ "0x12": {
+  "handler": 4863940,
+  "len": 4,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x13": {
+  "handler": 4864527,
+  "len": 4,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x14": {
+  "handler": 4864001,
+  "len": 4,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x15": {
+  "handler": 4864081,
+  "len": 8,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x16": {
+  "handler": 4864210,
+  "len": 4,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x17": {
+  "handler": 4864312,
+  "len": 4,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x18": {
+  "handler": 4864456,
+  "len": 4,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x19": {
+  "handler": 4862112,
+  "len": 1,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x1a": {
+  "handler": 4862112,
+  "len": 1,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x1b": {
+  "handler": 4862112,
+  "len": 1,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x1c": {
+  "handler": 4862112,
+  "len": 1,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x1d": {
+  "handler": 4862112,
+  "len": 1,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x1e": {
+  "handler": 4862112,
+  "len": 1,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x1f": {
+  "handler": 4862112,
+  "len": 1,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x20": {
+  "handler": 4350832,
+  "len": 24,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x21": {
+  "handler": 4351405,
+  "len": 8,
+  "kind": "behavior-script call: 0x445C74([obj+0x268]+u32[+4], 0, u16[+2]) - same runner as AOT door action-1; choreography; cont.50",
+  "operand_end": 0
+ },
+ "0x22": {
+  "handler": 4351596,
+  "len": 4,
+  "kind": "task-entity bind: ctx+0xA=rec[1] (kind), ctx+0xB=rec[2] (entity slot) - sets the task's implicit target for slot-implicit ops (0x3a etc.); cont.49",
+  "operand_end": 0
+ },
+ "0x23": {
+  "handler": 4351654,
+  "len": 32,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x24": {
+  "handler": 4352028,
+  "len": 8,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x25": {
+  "handler": 4352292,
+  "len": 4,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x26": {
+  "handler": 4352361,
+  "len": 4,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x27": {
+  "handler": 4352441,
+  "len": 4,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x28": {
+  "handler": 4352627,
+  "len": 32,
+  "kind": "var[32, 36, 40, 44, 48, 52]",
+  "operand_end": 0
+ },
+ "0x29": {
+  "handler": 4353877,
+  "len": 8,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x2a": {
+  "handler": 4353982,
+  "len": 8,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x2b": {
+  "handler": 4354066,
+  "len": 8,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x2c": {
+  "handler": 4354230,
+  "len": 4,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x2d": {
+  "handler": 4354615,
+  "len": 4,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x2e": {
+  "handler": 4354744,
+  "len": 20,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x2f": {
+  "handler": 4356861,
+  "len": 4,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x30": {
+  "handler": 4354988,
+  "len": 4,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x31": {
+  "handler": 4355044,
+  "len": 4,
+  "kind": "ctrlflow:operates on ctx regs, epilogue pc+=4; validated x438",
+  "operand_end": 0
+ },
+ "0x32": {
+  "handler": 4355656,
+  "len": 4,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x33": {
+  "handler": 4355741,
+  "len": 4,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x34": {
+  "handler": 4356247,
+  "len": 4,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x35": {
+  "handler": 4356332,
+  "len": 8,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x36": {
+  "handler": 4356400,
+  "len": 8,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x37": {
+  "handler": 4356695,
+  "len": 8,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x38": {
+  "handler": 4357420,
+  "len": 4,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x39": {
+  "handler": 4357529,
+  "len": 4,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x3a": {
+  "handler": 4357647,
+  "len": 12,
+  "kind": "behavior install ('brain'): on entity[ctx+0xB] set +0x190=ptr rec+4 (ONE 8-byte param/waypoint record {s16 x,y,z,spare} - per-behavior data, coords not pointers), +0x18F=1 (record COUNT), +0x176=rec[3] (b3 = GROUP-3 COMPLETION-FLAG index, SetFlag(3,b3,1) fires when the behavior completes), dword+0x3C=(rec[2]<<8)|4 (state 4, behavior rec[2]); rec[1] ignored; the activation opcode; cont.49/59",
+  "operand_end": 0
+ },
+ "0x3b": {
+  "handler": 4357823,
+  "len": 4,
+  "kind": "RELEASE: +0x3C=(rec[1]<<8)|1 - hand entity[ctx+0xB] back to autonomous state-1 with behavior rec[1]; slot 0xA (player) special-cased; cont.59",
+  "operand_end": 0
+ },
+ "0x3c": {
+  "handler": 4358002,
+  "len": 8,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x3d": {
+  "handler": 4358145,
+  "len": 12,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x3e": {
+  "handler": 4358673,
+  "len": 4,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x3f": {
+  "handler": 4358723,
+  "len": 8,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x40": {
+  "handler": 4358793,
+  "len": 12,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x41": {
+  "handler": 4358910,
+  "len": 4,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x42": {
+  "handler": 4358989,
+  "len": 20,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x43": {
+  "handler": 4359540,
+  "len": 8,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x44": {
+  "handler": 4359616,
+  "len": 8,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x45": {
+  "handler": 4359692,
+  "len": 8,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x46": {
+  "handler": 4359768,
+  "len": 8,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x47": {
+  "handler": 4359844,
+  "len": 4,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x48": {
+  "handler": 4359903,
+  "len": 4,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x49": {
+  "handler": 4360384,
+  "len": 4,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x4a": {
+  "handler": 4360510,
+  "len": 4,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x4b": {
+  "handler": 4360903,
+  "len": 12,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x4c": {
+  "handler": 4361073,
+  "len": 32,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x4d": {
+  "handler": 4361401,
+  "len": 8,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x4e": {
+  "handler": 4361619,
+  "len": 8,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x4f": {
+  "handler": 4361837,
+  "len": 8,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x50": {
+  "handler": 4361985,
+  "len": 8,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x51": {
+  "handler": 4362114,
+  "len": 8,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x52": {
+  "handler": 4362321,
+  "len": 4,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x53": {
+  "handler": 4362394,
+  "len": 12,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x54": {
+  "handler": 4362428,
+  "len": 4,
+  "kind": "multi-path on byte[+0xa]/byte[+1]; paths converge pc+=4; validated x47",
+  "operand_end": 0
+ },
+ "0x55": {
+  "handler": 4363233,
+  "len": 12,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x56": {
+  "handler": 4363435,
+  "len": 28,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x57": {
+  "handler": 4364411,
+  "len": 8,
+  "kind": "multi-path on byte[+1]; 3 cases converge pc+=8; validated x35",
+  "operand_end": 0
+ },
+ "0x58": {
+  "handler": 4365010,
+  "len": 8,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x59": {
+  "handler": 4367058,
+  "len": 20,
+  "kind": "pointer-reloc of 3 ptrs @+4/+8/+0xc; pc+=0x14; validated x70",
+  "operand_end": 0
+ },
+ "0x5a": {
+  "handler": 4367997,
+  "len": null,
+  "kind": "VARIABLE len = 4 + 8*byte[pc+3]; validated x28 (see oplen). Multi-record behavior install: 5a <behavior> <b3> <count> + count x 8-byte waypoint records; +0x3C=(rec[1]<<8)|4, +0x176=rec[2], +0x18F=rec[3] (COUNT), +0x190=rec+4 - the patrol/route variant of 0x3a; cont.59",
+  "operand_end": 0
+ },
+ "0x5b": {
+  "handler": 4368397,
+  "len": 44,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x5c": {
+  "handler": 4372500,
+  "len": 4,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x5d": {
+  "handler": 4372571,
+  "len": 4,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x5e": {
+  "handler": 4372755,
+  "len": 20,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x5f": {
+  "handler": 4372922,
+  "len": 12,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x60": {
+  "handler": 4373080,
+  "len": 4,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x61": {
+  "handler": 4373182,
+  "len": 4,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x62": {
+  "handler": 4373357,
+  "len": 8,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x63": {
+  "handler": 4373470,
+  "len": 8,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x64": {
+  "handler": 4373810,
+  "len": 4,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x65": {
+  "handler": 4860768,
+  "len": 4,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x66": {
+  "handler": 4860919,
+  "len": 4,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x67": {
+  "handler": 4373973,
+  "len": 8,
+  "kind": "bulk table loader: copies word streams at [obj+0x268]+offset into 6 globals [0x6430E0+i*4], counts {21,21,7,15,14,18,22}; cont.50",
+  "operand_end": 0
+ },
+ "0x68": {
+  "handler": 4861092,
+  "len": 8,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x69": {
+  "handler": 4861382,
+  "len": 4,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x6a": {
+  "handler": 4861492,
+  "len": 8,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x6b": {
+  "handler": 4861592,
+  "len": 4,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x6c": {
+  "handler": 4861773,
+  "len": 4,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x6d": {
+  "handler": 4861842,
+  "len": 4,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x6e": {
+  "handler": 4861901,
+  "len": 4,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x6f": {
+  "handler": 4862006,
+  "len": 4,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x70": {
+  "handler": 4862112,
+  "len": 1,
+  "kind": "fixed",
+  "operand_end": 0
+ },
+ "0x71": {
+  "handler": 4862112,
+  "len": 1,
+  "kind": "fixed",
+  "operand_end": 0
+ }
+}

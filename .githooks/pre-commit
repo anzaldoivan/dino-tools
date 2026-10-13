@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+root=$(git rev-parse --show-toplevel)
+cd "$root"
+stage=$(mktemp -d)
+trap 'rm -rf "$stage"' EXIT
+git checkout-index --all --prefix="$stage/"
+mapfile -d '' -t files < <(git ls-files -z)
+(cd "$stage" && python3 scripts/check-provenance.py && bash scripts/check-no-copyrighted-files.sh "${files[@]}")

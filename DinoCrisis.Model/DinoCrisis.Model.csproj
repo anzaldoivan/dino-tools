@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Standalone, shareable library: NO reference to anything under src/. Mirrors
+       ref/biohazard-utils (its IntelOrca.Biohazard core lib). TargetFramework/Nullable/
+       ImplicitUsings inherited from the repo-root Directory.Build.props. -->
+  <PropertyGroup>
+    <PackageId>DinoCrisis.Model</PackageId>
+    <Description>Clean-room reader/writer for the Dino Crisis 1 and 2 DCM character/enemy model format. Standalone — no DinoRand dependency.</Description>
+    <Authors>DinoRand</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+</Project>

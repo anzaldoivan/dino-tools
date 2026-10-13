@@ -1,0 +1,52 @@
+name: validation
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: validation-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - run: python3 scripts/check-provenance.py
+      - run: python3 scripts/check-lockfiles.py
+      - run: bash scripts/check-no-copyrighted-files.sh
+  build-test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-dotnet@a98b56852c35b8e3190ac28c8c2271da59106c68
+        with:
+          global-json-file: global.json
+      - run: dotnet restore DinoTools.sln --locked-mode
+      - run: dotnet build DinoTools.sln -c Release --no-restore
+      - run: dotnet test DinoTools.sln -c Release --no-build
+      - run: python -m pip install -r requirements.txt
+      - run: python -m unittest discover -s tests -v
+      - run: python -m unittest discover -s dc2_re -v
+  windows-pipeline:
+    runs-on: windows-latest
+    env:
+      DINO_TOOLS_REQUIRE_PIPELINE: '1'
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-dotnet@a98b56852c35b8e3190ac28c8c2271da59106c68
+        with:
+          global-json-file: global.json
+      - name: Install and check checksum-pinned external tools
+        shell: pwsh
+        run: |
+          ./model-pipeline/setup-dependencies.ps1 -Action Install
+          ./model-pipeline/setup-dependencies.ps1 -Action Check
+      - run: dotnet restore DinoTools.sln --locked-mode
+      - run: dotnet test DinoCrisis.Interchange.Tests -c Release --no-restore --filter 'FullyQualifiedName~ExternalToolValidatorTests|FullyQualifiedName~BlenderPipelineRoundTripTests'

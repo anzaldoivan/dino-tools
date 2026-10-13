@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>dcmtool</AssemblyName>
+    <RootNamespace>DinoCrisis.Model.Cli</RootNamespace>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DinoCrisis.Model\DinoCrisis.Model.csproj" />
+    <!-- The gltf verb (DC-MODEL-TOOLKIT-PLAN P1). The CLI is the composition point; the
+         DinoCrisis.Model LIBRARY stays zero-dependency per DCM-TOOLSET-PLAN §2 D2. -->
+    <ProjectReference Include="..\DinoCrisis.Interchange\DinoCrisis.Interchange.csproj" />
+  </ItemGroup>
+
+</Project>

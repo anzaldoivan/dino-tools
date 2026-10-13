@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Cross-format interchange: the ONLY project that consumes BOTH MIT model libraries
+       (DinoCrisis.Model for DCM + ref/biohazard-utils IntelOrca.Biohazard for EMD/MD1/EMR/TIM).
+       DinoCrisis.Model itself stays standalone/dependency-free per DCM-TOOLSET-PLAN §2 D2 — the
+       coupling lives here, in a separate consumer. See docs/dc1/CROSS-MODEL-INTERCHANGE-PLAN.md. -->
+  <PropertyGroup>
+    <PackageId>DinoCrisis.Interchange</PackageId>
+    <Description>DCM (Dino Crisis) ↔ RE EMD/MD1 model interchange. Consumes DinoCrisis.Model and IntelOrca.Biohazard (both MIT).</Description>
+    <Authors>DinoRand</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DinoCrisis.Model\DinoCrisis.Model.csproj" />
+    <ProjectReference Include="..\vendor\biohazard\IntelOrca.Biohazard.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SharpGLTF.Toolkit" Version="1.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
+      <_Parameter1>DinoCrisis.Interchange.Tests</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>
+
+</Project>

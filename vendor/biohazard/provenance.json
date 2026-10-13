@@ -1,0 +1,713 @@
+{
+  "upstream": "https://github.com/biorand/biohazard-utils",
+  "commit": "caa5db3fb39c722e6783628e6024229337e4edef",
+  "local_changes": {
+    "TimFile.cs": [
+      "PixelFormat",
+      "PaletteCount",
+      "ImageOriginX",
+      "ImageOriginY",
+      "PaletteOriginX",
+      "PaletteOriginY"
+    ],
+    "source_formatting": "UTF-8 without BOM, LF line endings, trailing whitespace removed; no semantic changes."
+  },
+  "files": {
+    "vendor/biohazard/AfsFile.cs": {
+      "upstream_sha256": "cf42c7aaf78d98446a7a130fa853897a751891e685963facb8f8aed732b82862",
+      "snapshot_sha256": "c0d48bc5510a23088dc21b36b10daab03a8dbc5222ccdacf09f49b70c23773b9"
+    },
+    "vendor/biohazard/BioRandUserException.cs": {
+      "upstream_sha256": "274caa64d344f81e02f779feadde3c06def8d6c17cb2482b6ca22f130c3d187b",
+      "snapshot_sha256": "efd55e0ad8c8b6fa14c2e0a9fa41cc8bf11b5194914fa4ff7c5b56c38a0c1d36"
+    },
+    "vendor/biohazard/BioRandVersionException.cs": {
+      "upstream_sha256": "cd0943d5b273f6c10025e3255ec1bb2b21e950d455a04923b975d09ca59656a5",
+      "snapshot_sha256": "9d213bbea8896cb04d1b5c63639df35891e3964fb2c7cc0eec5f66d007aa69cf"
+    },
+    "vendor/biohazard/BioString.cs": {
+      "upstream_sha256": "bd07b1cfc6493cfc5e5035de6f418331e1003b5d04d476a733caa574ed1a10fd",
+      "snapshot_sha256": "41fb4241ff401050b9cedbf44867205192c346f0a1d13f2e9d9cc202c069000b"
+    },
+    "vendor/biohazard/BioVersion.cs": {
+      "upstream_sha256": "9beffdd8cae95032aa044fd3676a20c7d88758d76fa537ad835c2d4b59eb27c4",
+      "snapshot_sha256": "d70545a1b8433a7e4c670b9237629f57921c5752e7793d2cee3e6e8fdf7ad231"
+    },
+    "vendor/biohazard/Bmp.cs": {
+      "upstream_sha256": "70ce8639cb11c49abb58f79102e7d0e0ba3e5d7f66cea7a9a62cf69deb636215",
+      "snapshot_sha256": "96d6944055daf20ad6a3f079dff5c17ebbf6f3f97a699ed836a8a6d55ea7457c"
+    },
+    "vendor/biohazard/CommonItemKind.cs": {
+      "upstream_sha256": "4ca1365085f0983832c358fbb6066166381a5ed938171fd72ce84dc9bb4cdcd7",
+      "snapshot_sha256": "bc9a61bafc7a7db6266d3316d4ff8f1ea9d1cee512c1ceae5283070c4132b95d"
+    },
+    "vendor/biohazard/DoorEntrance.cs": {
+      "upstream_sha256": "dfb8e41eb5110b65489b1b251d25b2bf21c9200e0443b39bd74acad39121a74a",
+      "snapshot_sha256": "cb181d01e8d45d39c426d50597aeec2aae56a8f587e127734637ff8bd074ef56"
+    },
+    "vendor/biohazard/Extensions/EmrExtensions.cs": {
+      "upstream_sha256": "b08960fa8d0869eb8047bf6b3b05649587fe16c3f0a96c81a003d9385a9ff8c5",
+      "snapshot_sha256": "4b89ef63bbfae452991c6109af17a30a9f944deebe6bb6b97038bd81e284daae"
+    },
+    "vendor/biohazard/Extensions/MemoryExtensions.cs": {
+      "upstream_sha256": "28ba4f9517ee55f383cd73f1ab0983269ecbd231bcd51db9197dada667242d2e",
+      "snapshot_sha256": "b38fe30e9d402db254c8b3f4e3c9071de5b213a765db231d81aac63e7ead1b3e"
+    },
+    "vendor/biohazard/Extensions/MeshExtensions.cs": {
+      "upstream_sha256": "11a85dec6cb6c45a5a15c042e0631fdabab5c6fac40c6191ef5b13c08f3e011d",
+      "snapshot_sha256": "8ad31a8c810bf35f3e8fe444078330e1736f76992f38222d05e0bfcbec078c02"
+    },
+    "vendor/biohazard/Extensions/MiscExtensions.cs": {
+      "upstream_sha256": "7dcecb1fb78ab8d612558fd55650b700d3488ad68d4a76166ef55aebd9cbc8ad",
+      "snapshot_sha256": "0acd0caf3a4c8e91402ff229a712948d8d1d6dd3ef8a4f2703a12307463a0128"
+    },
+    "vendor/biohazard/Extensions/MsgListExtensions.cs": {
+      "upstream_sha256": "7e11b009161245dc6f053a07a8d5f2fac1762f10df2656b3cfa7186a622d05c0",
+      "snapshot_sha256": "3506436bdadc9f20bee16928d4e7d523b596af9c6675df6b78c4c9e7482b2045"
+    },
+    "vendor/biohazard/Extensions/RbjExtensions.cs": {
+      "upstream_sha256": "6e3f70d5fe229f626744200f086d0f801bd69bfac385cabfe794a7fb2cdce34a",
+      "snapshot_sha256": "5c88f6446efad38edde3aa54c52c3c15774fb407ecfaeb717a079cc0e3f10187"
+    },
+    "vendor/biohazard/Extensions/RdtExtensions.cs": {
+      "upstream_sha256": "77497b45e25d05e54cb24d40c115381cd2f9bbbe80afa7a7b95b6144175cf407",
+      "snapshot_sha256": "e2f5ce0e81cca3f5bc0e999aebf0e7fac7c4a235b48fe8dda313c1ffa9078c4c"
+    },
+    "vendor/biohazard/Extensions/TimExtensions.cs": {
+      "upstream_sha256": "1581433814ce98efef60613efb15987669122fd2b04b6c5aefd4d95fa99891d6",
+      "snapshot_sha256": "ec38620d85b2302943dae456ecc7e95612f9e36c761006ba58b226c05b55e374"
+    },
+    "vendor/biohazard/FileRepository.cs": {
+      "upstream_sha256": "1a4412e25d8ad2d3aa9c58ab76b760c039c413ccf2445b225a293e62bedeee79",
+      "snapshot_sha256": "ab0793a94e94ce3e5741f02a13250012aeb7835b2f5f4bf3fc71b3f3f35a6225"
+    },
+    "vendor/biohazard/ForkedBinaryReader.cs": {
+      "upstream_sha256": "3a6da5574167cd935ba41916c142f8901f227d09767fcf6a9c67f85004f13464",
+      "snapshot_sha256": "3e94c4edc05ad5c97b08b9c3b4d93767ee6dbe601c936fdf764589f6ea89d888"
+    },
+    "vendor/biohazard/IntelOrca.Biohazard.csproj": {
+      "upstream_sha256": "94c330cebf1b6d86ff192a70175cd9f018c4a5f1e8f59412598083a5d032c438",
+      "snapshot_sha256": "575a13099821cd2781430bd4879cebd3e13c69f854e7450b0685321d7cf25650"
+    },
+    "vendor/biohazard/ItemAttribute.cs": {
+      "upstream_sha256": "d15e4400f60ced7d6b6d969090ca26e890b0972efd0387c66b2a6e9798e4995f",
+      "snapshot_sha256": "1a5c271ca4dfe72b1f747c276a087d41d7c339c58f049e11971f51525e0da496"
+    },
+    "vendor/biohazard/MSADPCMDecoder.cs": {
+      "upstream_sha256": "c7d76a26fd373a8eb5de99703d69bfc29efaba79e90219ffa72d5b48f63d1bbc",
+      "snapshot_sha256": "7ed6874bf0121d69fc8c990e4b2be51b0a314f09547c8323cbf00b66a99f2c83"
+    },
+    "vendor/biohazard/Model/AnimationBuilder.cs": {
+      "upstream_sha256": "cc9cf2336758bb656549797f42579b5b1e6628276e109b9d14969bbeb115857f",
+      "snapshot_sha256": "76de4ea8a90ba3f123e9695fb92c9260736ca728c7e351acece554b7db8e2099"
+    },
+    "vendor/biohazard/Model/Edd1.Builder.cs": {
+      "upstream_sha256": "94b7dae595e56e386c627c1b5d76b71329ceb09c432b7e39dda4a3731a059205",
+      "snapshot_sha256": "d554beba0363a7dc4bc432581c91dbce1f272395f0352b3bbf8f45a3fe259957"
+    },
+    "vendor/biohazard/Model/Edd1.cs": {
+      "upstream_sha256": "383355b23eb4484c698027a1373e2536966b19bc8a2846b187952cd3333333fe",
+      "snapshot_sha256": "ffd34de07df128848fb185e1d785dedef1f78e1fa45faec870c41798080f0cff"
+    },
+    "vendor/biohazard/Model/Edd2.Builder.cs": {
+      "upstream_sha256": "96033e3c319a4930ba669ab1b51086a478109323b8a144b5cfdf6ede047ddc6d",
+      "snapshot_sha256": "ba388c446d1499d6040f5ae56657add573f489a106858f13007c0014652c054d"
+    },
+    "vendor/biohazard/Model/Edd2.cs": {
+      "upstream_sha256": "9e8ded261cc2fc362f3802a3f8825a6f9c28e340c5fa20f327b76a1d8a3ac946",
+      "snapshot_sha256": "46459e0ab2ef6adc55c1c3864c1fd03a58ad5ff06ef84a7acf54f8311b5f5cb2"
+    },
+    "vendor/biohazard/Model/EmdFile.cs": {
+      "upstream_sha256": "acd15b94ae7c75f4499f6481e470c0e684448b6b3150a59a74ee7ea3bc80bc7c",
+      "snapshot_sha256": "fdaac296cc44029def0647a451680bd91be8d4868e1cbff2915e5d8ebbf03b4f"
+    },
+    "vendor/biohazard/Model/Emr.Builder.cs": {
+      "upstream_sha256": "14ba7708a8806d9333d49a25aaf9cc0c402e0e0ee3d3523d9e6fd6e10a9b907d",
+      "snapshot_sha256": "3f1c650a6d8a54b9d52a8ba0049068a24dfc28d6d6d9164705d7c0ea22d5ceed"
+    },
+    "vendor/biohazard/Model/Emr.cs": {
+      "upstream_sha256": "1a5bbce94f08d02efc67717f96505b6beabe166ab7f54f4c46a8ed3178c0025e",
+      "snapshot_sha256": "f76fe6e56e003897806459dbcea5a3e61f20c8b8c009a67bffacccf3203f5edb"
+    },
+    "vendor/biohazard/Model/EmrFlags.cs": {
+      "upstream_sha256": "ec7d2862a2c6c1081537e7a1ab05eb7603687607c1e345f8cbfe162a7a3a1d8c",
+      "snapshot_sha256": "47d4640c16c64e4f54744c2508da18851228a81369bf20e364b469862e5a018a"
+    },
+    "vendor/biohazard/Model/IEdd.cs": {
+      "upstream_sha256": "e1a798004e0ea338a35d5e46aad1b28f7ed492e7eebfaab97bab53227fda1a51",
+      "snapshot_sha256": "2ea6a3980b62f51e0258d2a93e7c3c7b7faff568189d75ecaca3f46ff433d633"
+    },
+    "vendor/biohazard/Model/IEddBuilder.cs": {
+      "upstream_sha256": "cf316f3bc9c53641d9edb12e5ee8186fd32fbe56bcea9bf0dcf4632f642241b9",
+      "snapshot_sha256": "3feae5767c7c1fc03b48363cd7e59146fe2dc349b6509ddd65713d887d428b96"
+    },
+    "vendor/biohazard/Model/IModelMesh.cs": {
+      "upstream_sha256": "23136e1945120a2a2b246effd1eb7719dc9cca09163943cd34288f8d7298952b",
+      "snapshot_sha256": "b90bb252a53bf08df4df284f04b370f3e076114b1cbe8fcc4ff21b19b7fbeb28"
+    },
+    "vendor/biohazard/Model/IModelMeshBuilder.cs": {
+      "upstream_sha256": "16f72bdf71f1a2c59df96f222a75f6f3aed9b81035f2d5c20959710aba0e0351",
+      "snapshot_sha256": "edd9d07c8794a14408edb188be297f211b9bb26f34a401c9deb5ab7793cd210f"
+    },
+    "vendor/biohazard/Model/Md1.Builder.cs": {
+      "upstream_sha256": "e69b16404b97ca0b1af5d78e02b9072ac9cdf6ddbd40ef120a3daa07023fda97",
+      "snapshot_sha256": "ac9d9a8f332dc05462034280ac5e37895430aef9509876a5a9f8637d4a6d6d7b"
+    },
+    "vendor/biohazard/Model/Md1.cs": {
+      "upstream_sha256": "832069821dd38d6c1624c617b72e5b9b59cc22ae2adf905024143793870573c9",
+      "snapshot_sha256": "39b2d9837c9fab211541680205fe71c47fbacfbb0ca55798978fe78b04cde289"
+    },
+    "vendor/biohazard/Model/Md2.Builder.cs": {
+      "upstream_sha256": "44332731ba55dbc2000d80722d1deb603837e5284a590d2a4bdb99953b46225b",
+      "snapshot_sha256": "d9cef72d89e7ed82ec718abef1a08fd6f2e69c8eae7ddb4fb1be72aed1e348d5"
+    },
+    "vendor/biohazard/Model/Md2.cs": {
+      "upstream_sha256": "0d89b31488d39de2059a5e957032b6f1f8a17691babccbfb3d1b9d11383d3050",
+      "snapshot_sha256": "56bad87b0a5556ebf9ff9e825a0f0f635f64e8c356347d24bb43e5f0f477a59a"
+    },
+    "vendor/biohazard/Model/MeshConverter.cs": {
+      "upstream_sha256": "6739d4cc33299f21623eac4916d0d4131f0e3803b09bed34c14ea8f5ffdc78cf",
+      "snapshot_sha256": "22111ca9e647a6af5a1192e2a651d9cd8f8a79ab773d10357021903948e20b00"
+    },
+    "vendor/biohazard/Model/MeshVisitor.cs": {
+      "upstream_sha256": "daf91f5e4ca88c4de8d47f43787e73c5ee3a9fe9234b7e1716eb7ba2b2445c05",
+      "snapshot_sha256": "7930887440861dd6b0cb76498874122eef191d81ca36f8111db92e5029f67645"
+    },
+    "vendor/biohazard/Model/ModelFile.cs": {
+      "upstream_sha256": "5cff019a141f2ad9c4c55a7bd2168ab1eefecc3cfe92a0650d485889e507f1c6",
+      "snapshot_sha256": "c3bca8514b0d532e72fdc8b764308fd7bd4074de4650f3e25cc4e6be576b7b89"
+    },
+    "vendor/biohazard/Model/MorphData.Builder.cs": {
+      "upstream_sha256": "2aef9aeb20ecd29ddfac6caedd8bcf590942f99dac7a599a980105488ea53948",
+      "snapshot_sha256": "5d53e47ccae2065f63a1c57f5b99ed574f5aeaeb44fcdfa5de18730d2e5344a0"
+    },
+    "vendor/biohazard/Model/MorphData.cs": {
+      "upstream_sha256": "3d4c33ed546ff7223f7c69c83024410e92383349528fc5bf8573b26bbc279173",
+      "snapshot_sha256": "3aead6a13996e6d23d38244f28c1d4e63255be9a10222168bcadb7ffe8534fad"
+    },
+    "vendor/biohazard/Model/ObjExporter.cs": {
+      "upstream_sha256": "be845b184dce59703c112a2293cad33b56eedde99a9a417f73e84654923e7ca4",
+      "snapshot_sha256": "8600fed53102f20ad7efee45b13053eff42adde14ff9b3f0978a679756d8f9d5"
+    },
+    "vendor/biohazard/Model/ObjImporter.cs": {
+      "upstream_sha256": "e121ba72c4b45b885bd9a31c2c8a9cb6866e614e40d05d93ae210a68d138e94d",
+      "snapshot_sha256": "e1458e20305c67cbfaef68e28259add6b4a5c6630e260f60abeb8c8da9113b55"
+    },
+    "vendor/biohazard/Model/PldFile.cs": {
+      "upstream_sha256": "6acf73dca6f37c98a5ffed5ddc59755ed03a854b15b640155c50fdb2a14a3495",
+      "snapshot_sha256": "ea6ed8f6c018acea8881b7fd078e1162d8ca6ef9349bf4b51a17947e36e567cb"
+    },
+    "vendor/biohazard/Model/PlwFile.cs": {
+      "upstream_sha256": "af91b87dbd1bcea0caaaeb132e203aa58bfcf3a9abc89f3069babb4c9c833838",
+      "snapshot_sha256": "d037069b9c8d9f2cba3b5cd08a57cd791691d6451ce90771b6de594ec7f27ea2"
+    },
+    "vendor/biohazard/Model/Tmd.Builder.cs": {
+      "upstream_sha256": "dd19b96c94ebe861a75c79e13f9536ce3f495544393e814a518bf58f89d9551c",
+      "snapshot_sha256": "4503a1c6f0e1b76786723397ad96b305bc9b2063fc48d88951e82cb3736cc10e"
+    },
+    "vendor/biohazard/Model/Tmd.cs": {
+      "upstream_sha256": "c769b05de044e0bf08bb7c93b08cd67f53c0bd4a59739663ade495832f044e87",
+      "snapshot_sha256": "9137e8163a87553f0a8df39567de7c87f4cfab74cf1e45eb636748a29bbd4834"
+    },
+    "vendor/biohazard/PSXADPCMDecoder.cs": {
+      "upstream_sha256": "1f3a2b5e4abd70e3290aa1e839cb1d2b275c9b1671d2cc440a1c21e4169e6a95",
+      "snapshot_sha256": "e09ea91e518c85e0575eec0d9a8e16fb98866617aa418a1f7b0fa6c1387fe873"
+    },
+    "vendor/biohazard/PSXADPCMEncoder.cs": {
+      "upstream_sha256": "bc41affd3d729b75061fa06ec6b1109a12409c3e4d17171182e295e278511c1e",
+      "snapshot_sha256": "f4afc46c2f7c66627c34661562cb6a293ae7cfbaa80f0bb15e783b3d07e50923"
+    },
+    "vendor/biohazard/PixFile.cs": {
+      "upstream_sha256": "61e9347acd6ef76eb71addc0925d7a5fd87f255d3dcf39d44976eb337c21dacf",
+      "snapshot_sha256": "336f26beb7098907e938b952c1488dfe9d414ee8a958f5c30587fafefc934fe2"
+    },
+    "vendor/biohazard/Program.cs": {
+      "upstream_sha256": "3a8b45b8ec8f32eca679d789a601e86678e17445623326544659b1fe85fb57de",
+      "snapshot_sha256": "8f6cb76b451c5bd2da640e885e1549b2ffd89ebe0aa066f2ff481fb21f732bfd"
+    },
+    "vendor/biohazard/Prs.cs": {
+      "upstream_sha256": "27a4aeda09c5325fe72621346f94174f5d2487344398bf525510f6e09667d1ce",
+      "snapshot_sha256": "85e343272a78f894e9cb03a9ac2af79cd8ece34e3fd427a690519cf95389a563"
+    },
+    "vendor/biohazard/PrsFile.cs": {
+      "upstream_sha256": "7a7be947e57ea40190a7742690aa01976d6ffff1229dac58fab957bfc815e330",
+      "snapshot_sha256": "14cb29cf8ff9d2b4eae8ad9c9844cd5933ea2d0df139ee90d9e48baa4e74a52b"
+    },
+    "vendor/biohazard/RE3Archive.cs": {
+      "upstream_sha256": "36d7b35a7075c18d0b283dc131968fc014cef01900fac3a94fd7298b461f3c68",
+      "snapshot_sha256": "eb35b4d4af6de9d586ffbc366d36c5459dbb0176852e28011d5eba8da5de5f14"
+    },
+    "vendor/biohazard/RdtId.cs": {
+      "upstream_sha256": "bda7865b30b1757685df75c6172c82c429b06a623795d703bc4995cbc2937094",
+      "snapshot_sha256": "872ba11489e7f926344897a2916e9811e5cdc75eeadcd1cce51f593b00a9071f"
+    },
+    "vendor/biohazard/RdtModel.cs": {
+      "upstream_sha256": "7b96cc5df17fb1b288f854ef3cd5803263e5c9611996368e45bd349b1a5839da",
+      "snapshot_sha256": "f0698621fc1ef81d87fe1d02f88b7445fbf8a1093737b612724f27e955465a7f"
+    },
+    "vendor/biohazard/Resources.Designer.cs": {
+      "upstream_sha256": "b3b41b6999d779b704a39748ce3a6bf2a65fdf3f6e9e1c96744985c15971d560",
+      "snapshot_sha256": "f4e7d09ca1e226a757cdc7166d11a4ea4a3acb0c3539807a6e56ae6a8e8d1721"
+    },
+    "vendor/biohazard/Resources.resx": {
+      "upstream_sha256": "4d3ee9059f5b98ab1806f6916ebea2a8c56023f8c63ddfd80b7378d27d1aa0f6",
+      "snapshot_sha256": "727f761db41263bfd777a4a18c75322ab4f439cc05b298e9de68eb3a3ece62e0"
+    },
+    "vendor/biohazard/Room/CvCameraList.cs": {
+      "upstream_sha256": "28fff3354b4d50e179ce0e3651c4b2aede34060b3e379ab4f30788965e059fc8",
+      "snapshot_sha256": "b2f0117d00c5e26f196ae03de6447f15dc0b045cfddeb295b985bd0b5ef3d9a6"
+    },
+    "vendor/biohazard/Room/CvModelList.cs": {
+      "upstream_sha256": "acf9a91541dc69051b0966ca5b8d1e64fdec26a2d42b58649cac6cddbe7708d5",
+      "snapshot_sha256": "2869b6b9378586e098ac457e3290f746763f398aaa755dba3b5de30ce88b1288"
+    },
+    "vendor/biohazard/Room/CvMotionList.cs": {
+      "upstream_sha256": "9cbeadf729f7a79e27e0ccdb5978ca06871b6fa4dbd80e4b6ac1db071cd60db5",
+      "snapshot_sha256": "1063fd825d4aeae5345c26bd6b2074acf33c11935ab7f30b57f0eed58e750148"
+    },
+    "vendor/biohazard/Room/CvMsgList.cs": {
+      "upstream_sha256": "6d2d9eb2cd3b939cff3f719eb9e2063342deafc42721388be36bbd14b38ce6bd",
+      "snapshot_sha256": "968e7b81d2a34bae56bf8fe2eb8f022cafb3312317a80e1e79a3240a027778a3"
+    },
+    "vendor/biohazard/Room/CvTextureList.cs": {
+      "upstream_sha256": "76392d32dc98b80ec196a0ddecd51afff83bf4ec8418a4827f13ea53c8670002",
+      "snapshot_sha256": "6691d1bea1b469df6ed434b781e0a8821221e74437fc325441d2e5ba3a8d12ea"
+    },
+    "vendor/biohazard/Room/Eff.cs": {
+      "upstream_sha256": "b19c05d4e39eb982243b09097177a0a91723468502075417db54d8805b4e8496",
+      "snapshot_sha256": "02e2c268174cb2c5cada8820294b251358a0ddea263bd152ade66ecf16800b2b"
+    },
+    "vendor/biohazard/Room/EmbeddedEffect.cs": {
+      "upstream_sha256": "00db105dbf41d0dff1c29d9a206216c77471d1924aca70542d9c09c7936ca124",
+      "snapshot_sha256": "918c79d806a6519f902194cafd1617b75aedd104ce21e37fd034b0a38d7adbff"
+    },
+    "vendor/biohazard/Room/EmbeddedItemIcons.cs": {
+      "upstream_sha256": "eabcd7ddc83d507b187a3bc9432b7f7ea57ee7268814b109412e52ea76a316f4",
+      "snapshot_sha256": "28f7f813ef8135327b53e005562eb30866cff2e6c9182724a0217d8f25cc31d3"
+    },
+    "vendor/biohazard/Room/EmbeddedModelTable1.cs": {
+      "upstream_sha256": "769e8902489483fb8d0cb7338c3b3970f668f5778410c49f0239e62c2055c11c",
+      "snapshot_sha256": "21d4c8347f4d50b1c4bc9632124e4dd5e270710a642e1bbdbf75106a74d312a1"
+    },
+    "vendor/biohazard/Room/EspTable.cs": {
+      "upstream_sha256": "e62b76ac5a862b8e11199deb35359e86647e97830284e6afa3d15ae936bea5c9",
+      "snapshot_sha256": "f32bf068cb60dd211649459451f36f25782bd526cd2fa1393be0b5b8e18fc98d"
+    },
+    "vendor/biohazard/Room/Etd.cs": {
+      "upstream_sha256": "be14ef0b7158ddf3a218755912f62cf413c3ced843c487ed96394cff5518ea2f",
+      "snapshot_sha256": "fbeadd2156c531203f5c454cbfa364abe6e83ef8ef0a95d3aa6227cea10ea5ce"
+    },
+    "vendor/biohazard/Room/IRdt.cs": {
+      "upstream_sha256": "933b723444c59475e9b0b33fecaff2565d408e2020df71abec958c8343c0cc70",
+      "snapshot_sha256": "c46fdfcb014943c7078eeb4ba686b1155abbdf20fd9f5409e5d0b83fd510bef6"
+    },
+    "vendor/biohazard/Room/Msg.cs": {
+      "upstream_sha256": "1efc5ee7315f5e82051428eefd005a7e7514ee6c3ec35a1fd3f6abab493bc7f8",
+      "snapshot_sha256": "7eb0002b1f54a91dae6c7475405a55f62655662408358888c078cadc88feeba9"
+    },
+    "vendor/biohazard/Room/MsgLanguage.cs": {
+      "upstream_sha256": "150f3af1f8c4ae59559dba8e7b1c5c3cc4c8f3b2a30a9f33ce213acb25dfee55",
+      "snapshot_sha256": "fc1b67251485ce77679dda70fedcda8b616b76a6b0d9a56a6e2166d9c7028317"
+    },
+    "vendor/biohazard/Room/MsgList.cs": {
+      "upstream_sha256": "6faede5ed39a89f4ae9d889f3644075b3081fa65f8ae0aef207dcedfd5613463",
+      "snapshot_sha256": "c92cd3ac60a146f7bb14bbb46a5f37474dc57626de655567920286cb77d925a0"
+    },
+    "vendor/biohazard/Room/OffsetTracker.cs": {
+      "upstream_sha256": "9bfec532df262ab196429d5f6acf240ca5f32116e29fdbd0086663090a7c2350",
+      "snapshot_sha256": "6ea87bbf109804ee8f36b5dceb257c7d90dc0b3752220ccc065cd6131e0bcbc2"
+    },
+    "vendor/biohazard/Room/Rbj.cs": {
+      "upstream_sha256": "396abc0731f1b4240b9a7013ca63aea1d338212075b4ca6d2e0d895d72cc0347",
+      "snapshot_sha256": "dcb3ab03045b54fdb6c8a6fd990396f971e75a5384b022605855e94db2a1f6df"
+    },
+    "vendor/biohazard/Room/RbjAnimation.cs": {
+      "upstream_sha256": "37ebc38d839b5fbd4bc0db8645d5fe23f19ec7b52792132ccf83de074669643c",
+      "snapshot_sha256": "d401e777d2609ca9ad9604776a145cb2b840f28bd9c6d0998c40feb839686916"
+    },
+    "vendor/biohazard/Room/Rdt.cs": {
+      "upstream_sha256": "5d06d80b149437ec8d04d2acd3663c637b7a9abbbc0195107b107c92b46d175d",
+      "snapshot_sha256": "c216ed77ec895db6a5c31f014d60d63749807d2742db25580628d5be6334d597"
+    },
+    "vendor/biohazard/Room/Rdt1.Builder.cs": {
+      "upstream_sha256": "708fd863a32dc1e5f3eef545749af3d10e745db0aa9eb6955e3f2b744548bb9c",
+      "snapshot_sha256": "93a787f35d4742d3d53ae3b457fc5f64550e35de1dfe1643d7f043fee7862fde"
+    },
+    "vendor/biohazard/Room/Rdt1.cs": {
+      "upstream_sha256": "79fef11e7a6b55a4086152de2d2ea23f96ff31e4a78466918222f38145e19c94",
+      "snapshot_sha256": "badfbc7a41318dfb55fdb9672ad96b567655fffee3b421267d19b430c9890d18"
+    },
+    "vendor/biohazard/Room/Rdt2.Builder.cs": {
+      "upstream_sha256": "7157083e2300c3b69e242835b5123ae8094c9adf79f1c03b0d0c3a42f05a1860",
+      "snapshot_sha256": "a4e664ba168183173545ec4aa8bb3e9e2f7125b5f62b1b0223d974e8777b3bdf"
+    },
+    "vendor/biohazard/Room/Rdt2.cs": {
+      "upstream_sha256": "d3360075ed4dc8d0c75d1f5bff68ce66022f6f4347b72f58e2969a56fbed6139",
+      "snapshot_sha256": "ee11d9ed4356c8aa98eb8b223178297ecb73da8cfb2acdce260adfb524ecdf9d"
+    },
+    "vendor/biohazard/Room/RdtCv.Builder.cs": {
+      "upstream_sha256": "04c3d781c3c03778a5faff64e2ee123fbf291de02e497e8cb0a24c8024394652",
+      "snapshot_sha256": "c840c3e84627c7de232ba9bbc7cd4bca17c4b2467f50ffdf732cd8f2b0f971ca"
+    },
+    "vendor/biohazard/Room/RdtCv.cs": {
+      "upstream_sha256": "ade5267f85380aaee8a46cbcf9767fc7ffacac7d30085f0059e34e7b5cf0ab5b",
+      "snapshot_sha256": "65f047be256280233d24c5359504bb15756f90216590cbfcd9009a303847a829"
+    },
+    "vendor/biohazard/Room/RdtFileChunkKinds.cs": {
+      "upstream_sha256": "0cb4a4ad583f7f68e46359b960e7e55bb4a34311d2ed5d909037c8a0475e05fb",
+      "snapshot_sha256": "8e58be08dcd2f9ebd72303d65b3b56f85c8132305fe2d8e13ee76607807e948c"
+    },
+    "vendor/biohazard/Room/RdtFileData.cs": {
+      "upstream_sha256": "96d5d355b587261b22eca40317be30f4739dc65d562f4c78ed21358c6be05632",
+      "snapshot_sha256": "431ac74a371234767f5f4b441b53f33cc7c0d517a9e28515fc386345b8ae25a3"
+    },
+    "vendor/biohazard/Room/Rid.cs": {
+      "upstream_sha256": "36e9de94c1eaf82bb64d2b7a030fd35ad099b647ccccbb99959cee05855cc622",
+      "snapshot_sha256": "1377a7ebb9ed00cd8a6abd29a4b8df1d50ad45846316dabfdb9236f18df2f487"
+    },
+    "vendor/biohazard/Room/ScdEventList.cs": {
+      "upstream_sha256": "87f6b985a22890544bd7791a0187d1cd148bab8781d016d583b28fc5328e02a6",
+      "snapshot_sha256": "9f58f24b7c01ac3744f840e2d7facc37065d121031c3ed62e92e0995e02a0d51"
+    },
+    "vendor/biohazard/Room/ScdProcedure.cs": {
+      "upstream_sha256": "f9463b42dabc1c0ffb0360e60d2d421e82bf75394b4db1da1d820f4d90a86a57",
+      "snapshot_sha256": "6403a87415f8d398f7298b10ec39a55c6dd03666faff5bc29f0f2690b21e93e1"
+    },
+    "vendor/biohazard/Room/ScdProcedureContainer.cs": {
+      "upstream_sha256": "d361f014e099960fdbe911a5bb4220053fe1654dd68a5b83828b6e114e46c8e8",
+      "snapshot_sha256": "0f58b846774a69e2f1252efb1085330ad34795f122096dbcb45754d163a71513"
+    },
+    "vendor/biohazard/Room/ScdProcedureList.cs": {
+      "upstream_sha256": "0d8392634279fd556c1258fd4e87fd54bd3e032d506ece3dc046ac52762f7f1a",
+      "snapshot_sha256": "0ee054a682846d6c719643b4b09ebfe8f4aedfa689bd3750c2262254201ec0be"
+    },
+    "vendor/biohazard/RtdDoorTarget.cs": {
+      "upstream_sha256": "9f5f2904bbc3cd3eb8b67b918a8c60616f89835b57637975736ed19c0e712d53",
+      "snapshot_sha256": "94b52c2725640483077eb52f45569a9a2c02ff5e1dc7ea74c169ab6990a56e9a"
+    },
+    "vendor/biohazard/RtdItemId.cs": {
+      "upstream_sha256": "a3203669d36ef97c73b29651a1c2ff68058009b2fce8018638676f7dee8f298a",
+      "snapshot_sha256": "850fb22f45ba43057be9803e498dff50af4a475733bdf3a0563a6e37961aefe1"
+    },
+    "vendor/biohazard/SapFile.cs": {
+      "upstream_sha256": "1f8e54c4a78b289f51a1ca9c81b5a1dd2b02917db0614449a1d1b6bfeb5183fe",
+      "snapshot_sha256": "57a80c09318c2fa5c9b986769eae309e30affad7d64212ba0dc01b91a52f9e18"
+    },
+    "vendor/biohazard/Script/AstPrinter.cs": {
+      "upstream_sha256": "a3c316deaa8a8fa87c19c5d8256272c221a2b8dd369cd2a5dffa82af84116fc7",
+      "snapshot_sha256": "c56d8f9cbf8d6f12055b2ca17e9e2a2f04616dae478cc8d4f0260514a2f92fb2"
+    },
+    "vendor/biohazard/Script/BasicBlockAstNode.cs": {
+      "upstream_sha256": "cdde1bfa0f7517770ad3ccbe15d6061a9209f07867f19cc39a0aec4d91b5713b",
+      "snapshot_sha256": "4119f0aa029e6fcc8faaab8257845f811b79934a435f64efbfd5f0735550b34c"
+    },
+    "vendor/biohazard/Script/Bio1ConstantTable.cs": {
+      "upstream_sha256": "07b708c8a6a6f6179366b35bdfe1e4c9f7a0c1fecd70f89c2d9c5fd10caf8bcb",
+      "snapshot_sha256": "ad63af8b87896294e33de4d528586ace3d41e3cf606de1e6c5e09661d9d9e4cd"
+    },
+    "vendor/biohazard/Script/Bio2ConstantTable.cs": {
+      "upstream_sha256": "13bfb1e15e8fb92f448c99e1dfa9426784baa762f8f3a74d9c8f8a569a816f70",
+      "snapshot_sha256": "23f6bf3a46cd0298548ae8cead41908fc85b604d05132b921bea1141b1bf757f"
+    },
+    "vendor/biohazard/Script/Bio3ConstantTable.cs": {
+      "upstream_sha256": "37e286028eb962c95be08195a86ed28dfdd062300c6311488ed29e7eb0c884be",
+      "snapshot_sha256": "d8c0d1dd637b613d0af0106239a7696491fb0bc16a563e1dd7182e4d59eb85ef"
+    },
+    "vendor/biohazard/Script/BioCvConstantTable.cs": {
+      "upstream_sha256": "90726af794adfe627034c5da99c446eb32a7ab960f5d190b142b57a8426dda00",
+      "snapshot_sha256": "4b3278ec069521511683195eeafdd6a499403916a30b644f052041c0fe0de242"
+    },
+    "vendor/biohazard/Script/BioScriptVisitor.cs": {
+      "upstream_sha256": "d6d300e283602569009546511bb84b5ced475a91a61b670d12d15538f00859e8",
+      "snapshot_sha256": "4ee56aef24ab9ad34b4bf5d37aeafb0d6a3b3980432f24f41835039b39d43a9f"
+    },
+    "vendor/biohazard/Script/CaseAstNode.cs": {
+      "upstream_sha256": "b019caf49a600c591df1638789c052c6c04e747a00ee4d6e7ab5dda8f494e94e",
+      "snapshot_sha256": "37b9fe7f42b4effc325b21db3d269fe0b0d23a069c5dd60281b1761ab0198b83"
+    },
+    "vendor/biohazard/Script/Compilation/Error.cs": {
+      "upstream_sha256": "9ec427666f11af1293ae82c20b11c551e2d8d10741952ed77decb48e1b0929d6",
+      "snapshot_sha256": "01f529b1d96cc8910874d4f4256bc48903332ee82a32ae522bbb26239073b8c4"
+    },
+    "vendor/biohazard/Script/Compilation/ErrorCodes.cs": {
+      "upstream_sha256": "3d5045c5c2ca68718c0822f427c8f67df51664259122be7b0589ff9901b7509a",
+      "snapshot_sha256": "8188910288fcbdc6ec4abc3437d14584fa76f08b46e20b0b6973f70d0a920d4a"
+    },
+    "vendor/biohazard/Script/Compilation/ErrorKind.cs": {
+      "upstream_sha256": "467c26745e480d1c3a9f4072acb3f2214a8ce8aa1a35dd787e95609629c7f9b0",
+      "snapshot_sha256": "e8d4ae45730fcd6c20aab7ab0e106d51d82176f321ce3d77002ce477c880ff0e"
+    },
+    "vendor/biohazard/Script/Compilation/ErrorList.cs": {
+      "upstream_sha256": "363a155b06f49ddb76a9ee01b789791d6448c2e80b09db3194281333eae733a2",
+      "snapshot_sha256": "97ea308d5b5e0deb3004eed03f867c51fc0fce675d14920957238d06e489b0bc"
+    },
+    "vendor/biohazard/Script/Compilation/IFileIncluder.cs": {
+      "upstream_sha256": "55eb7b919f930e92d465185fa47158404147e5780353838d79335c5361897c32",
+      "snapshot_sha256": "1683677cf89b8255f53959b5fd82a39358cacf0da54cb8737d2bf8733e5fb4c1"
+    },
+    "vendor/biohazard/Script/Compilation/IScdGenerator.cs": {
+      "upstream_sha256": "2a9491c658460be869e6ce95bb0a24db42cc910f51461e1991df33cc7afcfeec",
+      "snapshot_sha256": "796c97461db7bfb2c05b35510ccbece5695f1c9f875cd335f144142927850cb0"
+    },
+    "vendor/biohazard/Script/Compilation/LexerBase.cs": {
+      "upstream_sha256": "c76df9728d900e05495d154f6f90eab4c87031c88a22d308475813bebf2d748c",
+      "snapshot_sha256": "a597d9fb5828a37c1b9ca20a8eb367710a2f2a8ac8e2c8569e5ff7c2832cf912"
+    },
+    "vendor/biohazard/Script/Compilation/RdtEditOperation.cs": {
+      "upstream_sha256": "4adb6193a39dfb35943f7fde75271283a87c44582c88968fd4540f2261f8beaa",
+      "snapshot_sha256": "ab672e794b4fd0c99f35de894ecb9d473da17da8296dc1b524cb20cd58c71ca3"
+    },
+    "vendor/biohazard/Script/Compilation/ScdAssembler.Lexer.cs": {
+      "upstream_sha256": "d43fcbbef87bd7e2af4ca5a88e555ed6f0e1800420dc67f7d1047c12374f695b",
+      "snapshot_sha256": "849eb806a8ef1019f6e64744546f27284ee1515964484c4d5cb050cc9187ea28"
+    },
+    "vendor/biohazard/Script/Compilation/ScdAssembler.cs": {
+      "upstream_sha256": "0d7ade03e80adf4eee35c3769ca63531327c4fd2313fad24cc3f57800eca0826",
+      "snapshot_sha256": "281c72fca551ddf8c60a62b702e2b9bf84f4cf68ae440d86314ad7a927e8eecc"
+    },
+    "vendor/biohazard/Script/Compilation/ScdCompiler.Generator.cs": {
+      "upstream_sha256": "fcdf483699f742730ff5e2bc8a08aeae8a322a62151877745dcb4fc84532a7e3",
+      "snapshot_sha256": "6f43e5543ed90355404c977edb20ba802010f933f4d91dc56f4c98b4d3450423"
+    },
+    "vendor/biohazard/Script/Compilation/ScdCompiler.Lexer.cs": {
+      "upstream_sha256": "9a2b3e3acb0d2f1bf155128a28c19a2f525bc11ecddb4b1febe0c60954905db0",
+      "snapshot_sha256": "871a3d4024550ec8dc393c721a74b8c5b98947b6822842b5e9436de50a8e38b4"
+    },
+    "vendor/biohazard/Script/Compilation/ScdCompiler.Parser.cs": {
+      "upstream_sha256": "b5fcd784b15e5c23d85a007ed9344289faad213f71738ff78346272d802f3444",
+      "snapshot_sha256": "f9040d064a84744a251562e9fcf6640756552a5b292c108d7575de7fd5fc1cf6"
+    },
+    "vendor/biohazard/Script/Compilation/ScdCompiler.Scanner.cs": {
+      "upstream_sha256": "37d5611b2cf8dadcbdfacbb319ec6ffa9dee07e305621e5e204feda5810840bc",
+      "snapshot_sha256": "21bc34beff56c9ce9c371a1fd1cdedee492e827876b6078e75e3878a4dec33be"
+    },
+    "vendor/biohazard/Script/Compilation/ScdCompiler.cs": {
+      "upstream_sha256": "4703a754b816b00e5a44a5ff29503088484bbf5fa826afe0558e7a802bef5af8",
+      "snapshot_sha256": "4703a754b816b00e5a44a5ff29503088484bbf5fa826afe0558e7a802bef5af8"
+    },
+    "vendor/biohazard/Script/Compilation/Token.cs": {
+      "upstream_sha256": "17f96572373ee6cac1647398fda47dbe1b491f2349097989029913c9ca37bab1",
+      "snapshot_sha256": "84cc26a6204fa7d932b8ff42eb2d94a1aa4b29c0ed800d4061427a4e2e009f1b"
+    },
+    "vendor/biohazard/Script/Compilation/TokenKind.cs": {
+      "upstream_sha256": "fe54917ffff7ce82b27eafc8ab1ee8129d36b2f52f324f01219dc437b111a3b7",
+      "snapshot_sha256": "028ab48547ff8e4800c8471178a49dac5a5daa3b552f3eb9847deffe1e8fe181"
+    },
+    "vendor/biohazard/Script/Compilation/TokenReader.cs": {
+      "upstream_sha256": "0df73f2af4e5eb687fd95d9331b3aae4775461b45918c830526801e1d8828fd5",
+      "snapshot_sha256": "0e85b7d008bf4e3ada483f58f76be360159c8faaec48e12fffd7f13ec151c061"
+    },
+    "vendor/biohazard/Script/ConditionalAstVisitor.cs": {
+      "upstream_sha256": "140c3ea7e159b43f83e214e1670ac70aaa48ba1b3952c0231117427cbfc96a5a",
+      "snapshot_sha256": "cadb4e5cf3f3fe2486c608bd25c35a0137296d91e1717646490654628cf1ab23"
+    },
+    "vendor/biohazard/Script/ConstantTable.cs": {
+      "upstream_sha256": "f6dd6dddbc2070f64fac28fefdb86975cba2ba70f628475a2f6f632e63269cfb",
+      "snapshot_sha256": "0b4188c7e954892385bed8ed6c756d73362680ea8be424ddd0bc8361a38ff455"
+    },
+    "vendor/biohazard/Script/IBioScriptVisitor.cs": {
+      "upstream_sha256": "fd294a574d1ab30151d3e47bd1897a7e6cac1487d5b35cd0cd99f533c9fa47bc",
+      "snapshot_sha256": "adf840c7ca05dfe7b98e33543f3d14b6c33421f729ce00bdab0ba821db4ab05c"
+    },
+    "vendor/biohazard/Script/IConstantTable.cs": {
+      "upstream_sha256": "c2cecf96bf4c0eb04b958733b40f0452b74da418f6961ccfba67b0992214265b",
+      "snapshot_sha256": "63be00790ab1ecc97c2bb5a7e46a8fa38ba6bf4ebdba9dd1fce83780fe672df5"
+    },
+    "vendor/biohazard/Script/IScriptAstNode.cs": {
+      "upstream_sha256": "707f1bcf6f4115cb7bb6f516f5c464be8a00ea930344dc1640bf3d06a9f9cb53",
+      "snapshot_sha256": "60ef9fb224ddc1f9afaaf632d85fcf19bde325339bf44ff7425cf4cd0b50ae07"
+    },
+    "vendor/biohazard/Script/IfAstNode.cs": {
+      "upstream_sha256": "e43e7b4b9c80f13d1fd7fbc850eab033a1e726104a16bede707bd53c616fbba8",
+      "snapshot_sha256": "f7878859d4d960879fa1cb00d1a09384e11aada51bc3183d541502f092357ec6"
+    },
+    "vendor/biohazard/Script/NullBioScriptVisitor.cs": {
+      "upstream_sha256": "2b0e8f0a74ad1e24285a2f4466255559d2c515cba1e771dd37d2519a69aa379e",
+      "snapshot_sha256": "ae5073e6b12d3d5be159f25ff005c57a35509b3690ff3755a63c2f28890ed94a"
+    },
+    "vendor/biohazard/Script/OpcodeAstNode.cs": {
+      "upstream_sha256": "92947bd3f4b3648ec0552e01173c7c2d4d21fc383c6c2f58f91cad3d12d07605",
+      "snapshot_sha256": "2743147b48c2015b4af4d3c81ff37cca45649e0d55e24ab368624101f21e125a"
+    },
+    "vendor/biohazard/Script/OpcodeBuilder.cs": {
+      "upstream_sha256": "32b2604b40fbbcbaf9f02c38397a821112779ac615daea59baa0585f56d13cfc",
+      "snapshot_sha256": "bc00415461b6baf2b3d2eaba17f66d24dae141f15235db0456179fe995e59f61"
+    },
+    "vendor/biohazard/Script/OpcodeV1.cs": {
+      "upstream_sha256": "e0ec70a6cff4bb75884ef8263a5ca962910fd90bd4c5e5593f5cb8a5818d624c",
+      "snapshot_sha256": "5fd5c9f46777a3d3ec26e80acc1abe3658cc29038c1b956a14531870c1cdb9c7"
+    },
+    "vendor/biohazard/Script/OpcodeV2.cs": {
+      "upstream_sha256": "945e44c60627353d39131a6a39917b45ef2798bc44ce7c37ce431ce1000a33a8",
+      "snapshot_sha256": "f041bb7470c2067b9e6c4a5f30fc5a07a24f130aa58a7504c5807a5045b9c724"
+    },
+    "vendor/biohazard/Script/OpcodeV3.cs": {
+      "upstream_sha256": "c4e36993caa121b54d5903fc24dcc3957d83e344ff347eac068d5ce2594958a8",
+      "snapshot_sha256": "913926309c1e87713209fc2d81f6e9a488ea8a18c91d3448f2452e998e37efec"
+    },
+    "vendor/biohazard/Script/Opcodes/AotResetOpcode.cs": {
+      "upstream_sha256": "c089fc8647d5263b0e216a3c7094f5a355e86988bf86649d213b03ef9b5a9592",
+      "snapshot_sha256": "6129e3d7fd529fca9d07acfeaff6402458c612ec5dbc35d388abe476818069bc"
+    },
+    "vendor/biohazard/Script/Opcodes/AotSet4pOpcode.cs": {
+      "upstream_sha256": "e93f872de9b887f7c36f1864558b901c763997900cee08ba4f5c5025ae6b84e9",
+      "snapshot_sha256": "7768dc6df941bd3b83d7bcf616f9f963b157bdd1854588a8c88898e6f68af4c9"
+    },
+    "vendor/biohazard/Script/Opcodes/AotSetOpcode.cs": {
+      "upstream_sha256": "00dac5dabbd355438a526b7603461ecd15a69dc38e2d195b53685c689b4a1e9a",
+      "snapshot_sha256": "d539e301fa8ff49e12c24e53a49944f2626014a6865cb74852d936a3d89e4342"
+    },
+    "vendor/biohazard/Script/Opcodes/CkOpcode.cs": {
+      "upstream_sha256": "bbe3e144eaac3735401fbf5b3addc34f567d15bd075aa01d1f286d3c629e0ec7",
+      "snapshot_sha256": "7b0f590a80bfd72ee5f1cb5d5a22a417488532879d98f8fa769857cbc13770d1"
+    },
+    "vendor/biohazard/Script/Opcodes/CmpOpcode.cs": {
+      "upstream_sha256": "a7d2e8e71523c4e4f8f9597748ad342e945f9012a139d7814149160f8fac9c04",
+      "snapshot_sha256": "4fb8c02f94e8e0e1162ea249773050aacc572b767b82ca221ec2dbf53ca821fa"
+    },
+    "vendor/biohazard/Script/Opcodes/DoorAotSeOpcode.cs": {
+      "upstream_sha256": "7bdea146ebcdeebc7bd4d91b5ab9ec713650ab676d4927fd5741e53d8db58395",
+      "snapshot_sha256": "4f2710c573efaca2a9d4e4b23c43eb19370ace681cacfd80c6207acc7931abd5"
+    },
+    "vendor/biohazard/Script/Opcodes/DoorAotSet4pOpcode.cs": {
+      "upstream_sha256": "e2a61674beb651229313125b8c7da98aed2b3ec07c73cb51e6f7103e9ff47c77",
+      "snapshot_sha256": "6638e732b53184b85d6f4db68d947c17342b6ba0d0dda09f2491563025f2d0fc"
+    },
+    "vendor/biohazard/Script/Opcodes/ElseCkOpcode.cs": {
+      "upstream_sha256": "a409c3748e6790ff61c4722a2abaa442fc0c529cb510994b4011bc483bc803f0",
+      "snapshot_sha256": "96922545121e0b8a047869925d803cc16e1507f04f18105098c09f40342f64e0"
+    },
+    "vendor/biohazard/Script/Opcodes/EvtExecOpcode.cs": {
+      "upstream_sha256": "5e8ff30369275c15966d927c0fe22ae95f94af783f06b6dd083a999a2733650d",
+      "snapshot_sha256": "5324566f55bdffff31b48e95c2f01d5863810b1037f58c92a82f6bfe14b8a130"
+    },
+    "vendor/biohazard/Script/Opcodes/GosubOpcode.cs": {
+      "upstream_sha256": "c540c0474c85378ea6516738ac7a63a88a702bf304a9e6a0a66341402cae89a3",
+      "snapshot_sha256": "e3b8fd6d685c8e0d5b17a4381f2d255eefe0a99c61e6448fd77f7dd8f43a89d1"
+    },
+    "vendor/biohazard/Script/Opcodes/IAot.cs": {
+      "upstream_sha256": "2e7b3bb81de33d1cd592035244ae8dd75a20a7b97b984ad5e4fa4e0cc5ea9caf",
+      "snapshot_sha256": "03d7ddc4c6f7a2bb9fac11533a30d017ef8bb9e61be4dcf01717abf2047595d1"
+    },
+    "vendor/biohazard/Script/Opcodes/IAotSetOpcode.cs": {
+      "upstream_sha256": "e4d43cb1ffe2dee7cd128375e0e7dcbf4ce980587dca21a8f708a0e2ddc2b143",
+      "snapshot_sha256": "cc6a35388a322cd9a364ac9b6ad14495ba9528d2cb8038d7f80444785bab74f1"
+    },
+    "vendor/biohazard/Script/Opcodes/IDoorAotSetOpcode.cs": {
+      "upstream_sha256": "fb0cfadcee1ae80da3f7efb81f71adb597a3e7dad77b6b9cc3d4d37ee5feb41f",
+      "snapshot_sha256": "72ce85afae05b51380e39c1b4dfd21433476ddf23dd2d7f6073f7be16e57b555"
+    },
+    "vendor/biohazard/Script/Opcodes/IItemAotSetOpcode.cs": {
+      "upstream_sha256": "1808ed2fd62a8e70105ffdba49411779d1950e5ed720208797200722d26a022e",
+      "snapshot_sha256": "567c845b8d012b7bf47bba86b3e517a17b392e5c820e67c2f302ae353685ee28"
+    },
+    "vendor/biohazard/Script/Opcodes/ItemAotSet4pOpcode.cs": {
+      "upstream_sha256": "bfafe5c3a1af868c512fcd7aacbd6e2cc5d859c350f61d0639b55f321b3b610b",
+      "snapshot_sha256": "3b4f0067db8c876175be0ff548c2a0879640c96651fc68fd06b5ee7149676699"
+    },
+    "vendor/biohazard/Script/Opcodes/ItemAotSetOpcode.cs": {
+      "upstream_sha256": "30eaf4ea373095cf9058d7cf87657aba5aa04f3e6921ca9d4a4256a36fd6c73a",
+      "snapshot_sha256": "90b8d95c8a4a9dae9063e149919f9ba4af70742eacf06bc910465be9ce282988"
+    },
+    "vendor/biohazard/Script/Opcodes/OpcodeBase.cs": {
+      "upstream_sha256": "34a6dcbf090c3c070c71bd55610a29d24ebda2f68cb8259b9d6b1172caab259c",
+      "snapshot_sha256": "ce37f28bb9bf7f4eb5b373dd6f3c4debae4a5ccbfc448c0753a9ee5c39add02c"
+    },
+    "vendor/biohazard/Script/Opcodes/SceEmSetOpcode.cs": {
+      "upstream_sha256": "61e99b3c0a36828e722edeee9ae4ab4c0f1e9d272bd9dc8628fb8f033e1e6243",
+      "snapshot_sha256": "e165f4d0d734ce1511a9ad96055af6abe41c5c85b571129e01eae8edf40b9b57"
+    },
+    "vendor/biohazard/Script/Opcodes/SceItemGetOpcode.cs": {
+      "upstream_sha256": "28e04714cb492679e7e91aa4ace1f87cc146209895f5f29edcc4d63fa5c55279",
+      "snapshot_sha256": "5ff67ea3159bf815de2abf06357b93d78020d8efe15d44de048f4f465ceba700"
+    },
+    "vendor/biohazard/Script/Opcodes/TestPickup.cs": {
+      "upstream_sha256": "78dd4350990fc645fec9c0c1426e64dd20d989190ae6ddc8bc03301cc13729fe",
+      "snapshot_sha256": "861162bacc023d3a1d1f520cc56b0c1b126ac3e72337cb9d0554d66ce741a980"
+    },
+    "vendor/biohazard/Script/Opcodes/UnknownOpcode.cs": {
+      "upstream_sha256": "44e7c9f4c2bea3ec07134243b898b4c1615b05354a2c664c1971623086a2a4c8",
+      "snapshot_sha256": "013de4c30283488d522a18a742a90f7a715fa6aa1548bd684afc7af4c8bd1481"
+    },
+    "vendor/biohazard/Script/Opcodes/XaOnOpcode.cs": {
+      "upstream_sha256": "ddd455f18301b787b4bf0e655a3d042abd531198e12fa15025550101be888071",
+      "snapshot_sha256": "eab8cbde8e0a660fd1ffbe60bcf80e9f262601a8daa9912b911070c929cc9d8e"
+    },
+    "vendor/biohazard/Script/Re1EventOpcode.cs": {
+      "upstream_sha256": "1826edc4b90a241e5ca825a74342f510265141877521108ecaa3ae5f3927ff6f",
+      "snapshot_sha256": "a9c7979ca499ddec813c1c05ecb81b0688350b42ddf12a39e0cc0ec9bf9e549a"
+    },
+    "vendor/biohazard/Script/ScdReader.cs": {
+      "upstream_sha256": "b026b2ae969f4179c40d70aca92c6a563bfe620f98d6c26dd4897f5373380e97",
+      "snapshot_sha256": "e3fbafac33c2fbef883df16a2a52248cef32067437599493601c39d4d11cdff6"
+    },
+    "vendor/biohazard/Script/ScriptAst.cs": {
+      "upstream_sha256": "80792cc3bc79282c90a4f8960358bfb590e00fb55344af5310d3687630309a75",
+      "snapshot_sha256": "d96906a0782cff83cd820cd841730930fab4273d2e2231026eb58dccd933b1f9"
+    },
+    "vendor/biohazard/Script/ScriptAstBuilder.cs": {
+      "upstream_sha256": "42b8f07e9c2d03a384ea63b1fa10face23fb8155051a02535422bdb5f4c3c8f7",
+      "snapshot_sha256": "1e10e386cf0df3edd98591b497155f6560ae738c99adf938eb5e06d4426b9ed5"
+    },
+    "vendor/biohazard/Script/ScriptAstNode.cs": {
+      "upstream_sha256": "410f47dd8c8a5977e917240a4c6113effad662e48c3213d07a895cd7603b87bd",
+      "snapshot_sha256": "0553760f557af38c750eb496e671750e27bdc6b8ba12703740755808782b6827"
+    },
+    "vendor/biohazard/Script/ScriptAstVisitor.cs": {
+      "upstream_sha256": "c82cf3c5b598470ae1d7a8f34aefcab7e7e358547e94676c9aa6e79452b432f1",
+      "snapshot_sha256": "4c7412f5ccca89ad53aa5beac0727a00631172424c67333ae798f3d3f5161944"
+    },
+    "vendor/biohazard/Script/ScriptBuilder.cs": {
+      "upstream_sha256": "d0c7a80804b3ec82697e2003011b356d561103ad0d8d6d97c3e23ff30f279054",
+      "snapshot_sha256": "bfaadfb98c0e481b3a609e19758add8fc255be67aca20e981e8a17a5ad86b524"
+    },
+    "vendor/biohazard/Script/ScriptDecompiler.cs": {
+      "upstream_sha256": "2f959358f86852d178f5eaeca60dc29a18288fbaef19c3ad391540efcaddc8b9",
+      "snapshot_sha256": "1dff59078dfb71a1eca67cf7a66571e9941c62c958ab0a86d81adc79443aa441"
+    },
+    "vendor/biohazard/Script/SubroutineAstNode.cs": {
+      "upstream_sha256": "0ac93262e65ea41c9244b3cadd91e2ecdad3a4d611aa905a92e5238e9ee66ed6",
+      "snapshot_sha256": "6f91a96fd1ad4f5e4d8913e1aa2c9a8a9ac5cd233a6cc452027bcfef089a1196"
+    },
+    "vendor/biohazard/Script/SwitchAstNode.cs": {
+      "upstream_sha256": "323e5b8493961b32fc6bc0feaff58ab7b3c48b623d2a5b5a0baca265b6cb45a4",
+      "snapshot_sha256": "dffdab04ec26c3349e15725d1706460614fa3c052d09029447caa91e48674a75"
+    },
+    "vendor/biohazard/SlicedStream.cs": {
+      "upstream_sha256": "9977762681084e02e6ea479885e8ae99109386fe3f502bfd3bd48deb38da6250",
+      "snapshot_sha256": "7cb396f3139baea920a414ef97959f0fa6741393dc62a3210ed41b261a444c4d"
+    },
+    "vendor/biohazard/SpanStream.cs": {
+      "upstream_sha256": "84f9c4df5c1465a41c46857a63862e318818ef2a4a17eb2e3c98f916e077a34b",
+      "snapshot_sha256": "f66ae30f9f97e9f42dd6e01c08de8039a30ad605f28f7a53dd0e213900c31794"
+    },
+    "vendor/biohazard/Tim2.cs": {
+      "upstream_sha256": "0960b4634b9a499b15f911b83c7ff5d985aa51c7f04839e7f97cf0b40de1dcd3",
+      "snapshot_sha256": "689339423fc0931d338c22d01db7370815d9b130130895c431ff7b495c72f4a0"
+    },
+    "vendor/biohazard/TimFile.cs": {
+      "upstream_sha256": "0832cec3641ba51380f0cb5a281f8b6f842f3e52f0994e50942b0b01fa79ff28",
+      "snapshot_sha256": "65cf79a808fea16a5c7fbb55ab4555c04c7f8a03ddbe72402a5c93c324281e36"
+    },
+    "vendor/biohazard/VabFile.cs": {
+      "upstream_sha256": "f4221a7fb8793c820eb931a3e4b2568ee24efaf4e8d6d4bb26adbda447032522",
+      "snapshot_sha256": "771e2a6523b6eee87a24816ad7f8432f8fa315a74bfdeafcfb2f2d35c8451d3c"
+    },
+    "vendor/biohazard/WaveHeader.cs": {
+      "upstream_sha256": "539ec85156add0cbe42f33a85e66e48260abdb670a6f13f65ca1aca21c8e1e68",
+      "snapshot_sha256": "d92c64345fd5898db2a92733a80497b774768d88733de126ecf308a8e3e24d88"
+    },
+    "vendor/biohazard/WaveformBuilder.cs": {
+      "upstream_sha256": "4c0ad7b2bf16658b6ca99172ed96a3e67f6bcc5a50128cf296c4dacaed2e18a5",
+      "snapshot_sha256": "2e7c5bf88612164681c1402c17691ae4b8b1dadc650a292c16b839b272d5ab27"
+    },
+    "vendor/biohazard/WavefrontObjFile.cs": {
+      "upstream_sha256": "d81ad48034b16bcf387a33c3910b29243b01f842244078d3af3eb13c3e510162",
+      "snapshot_sha256": "e22c16c5b2d9c0c515c86eed7a2ecd1ce63c259227a485761b442e5c77840841"
+    },
+    "vendor/biohazard/WeaponKind.cs": {
+      "upstream_sha256": "4e11a3a0214e575c7a9340ba28fe2dd2af0e3919116355b6d428f61e167db48e",
+      "snapshot_sha256": "d59145237388a667071de98564a42352cd3668a3585e83d0c4902a68f0743eda"
+    }
+  }
+}
