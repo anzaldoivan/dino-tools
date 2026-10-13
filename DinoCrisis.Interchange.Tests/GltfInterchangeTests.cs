@@ -377,7 +377,7 @@ public class GltfInterchangeTests
 
     [Dc1Theory("st605.dat", "st106.dat")]
     [InlineData("st605.dat", 22, 334, 57)]   // Therizinosaurus
-    [InlineData("st106.dat", 15, 282, 179)]  // Velociraptor
+    [InlineData("st106.dat", 15, 282, 179)]  // Humanoid (NPC, 15-bone human rig)
     public void Golden_dc1_room_models_export_valid_skinned_glb(string file, int parts, int tris, int quads)
     {
         byte[] bytes = File.ReadAllBytes(FixtureGate.Dc1File(file));

@@ -1,12 +1,14 @@
 {
  "0x0": {
   "handler": 4862112,
+  "name": "NOP",
   "len": 1,
   "kind": "fixed",
   "operand_end": 0
  },
  "0x1": {
   "handler": 4862211,
+  "name": "TASK_SPAWN",
   "len": 4,
   "kind": "TASK-SPAWN: run event sub s16[+2] as a parallel VM task s8[+1] (-1=auto-alloc via 0x4A30B6); task array 0x6B4660 stride 0xB0 (pc+0x58, stack+0xAC); gated on GetFlag(10,9); cont.50",
   "operand_end": 0
@@ -31,6 +33,7 @@
  },
  "0x5": {
   "handler": 4862711,
+  "name": "GOTO_SUB",
   "len": 4,
   "kind": "GOTO-SUB: ctx->pc = [obj+0x268]+table[s16[+2]], call-stack reset (+0xAC=+0x5C); gated on GetFlag(10,9); cont.50",
   "operand_end": 0
@@ -61,18 +64,21 @@
  },
  "0xa": {
   "handler": 4863272,
+  "name": "LOOP_NEXT",
   "len": 4,
   "kind": "ctrlflow:loop-next (off16 @+2); validated x671",
   "operand_end": 0
  },
  "0xb": {
   "handler": 4863404,
+  "name": "LOOP_SET",
   "len": 4,
   "kind": "fixed",
   "operand_end": 0
  },
  "0xc": {
   "handler": 4863482,
+  "name": "GOTO",
   "len": 4,
   "kind": "ctrlflow:goto (off16 @+2); validated x2",
   "operand_end": 0
@@ -85,30 +91,35 @@
  },
  "0xe": {
   "handler": 4863544,
+  "name": "BRANCH_IF",
   "len": 4,
   "kind": "ctrlflow(len from live capture)",
   "operand_end": 0
  },
  "0xf": {
   "handler": 4863640,
+  "name": "GOSUB",
   "len": 4,
   "kind": "ctrlflow:gosub (target @+2, ret=pc+4); validated x451",
   "operand_end": 0
  },
  "0x10": {
   "handler": 4863873,
+  "name": "RETURN",
   "len": 2,
   "kind": "ctrlflow:return (no operand); pc<-call stack; validated x26",
   "operand_end": 0
  },
  "0x11": {
   "handler": 4863933,
+  "name": "HALT",
   "len": 2,
   "kind": "end/nop (no operand); never seen in corpus",
   "operand_end": 0
  },
  "0x12": {
   "handler": 4863940,
+  "name": "MSG_WAIT",
   "len": 4,
   "kind": "fixed",
   "operand_end": 0
@@ -151,84 +162,98 @@
  },
  "0x19": {
   "handler": 4862112,
+  "name": "NOP",
   "len": 1,
   "kind": "fixed",
   "operand_end": 0
  },
  "0x1a": {
   "handler": 4862112,
+  "name": "NOP",
   "len": 1,
   "kind": "fixed",
   "operand_end": 0
  },
  "0x1b": {
   "handler": 4862112,
+  "name": "NOP",
   "len": 1,
   "kind": "fixed",
   "operand_end": 0
  },
  "0x1c": {
   "handler": 4862112,
+  "name": "NOP",
   "len": 1,
   "kind": "fixed",
   "operand_end": 0
  },
  "0x1d": {
   "handler": 4862112,
+  "name": "NOP",
   "len": 1,
   "kind": "fixed",
   "operand_end": 0
  },
  "0x1e": {
   "handler": 4862112,
+  "name": "NOP",
   "len": 1,
   "kind": "fixed",
   "operand_end": 0
  },
  "0x1f": {
   "handler": 4862112,
+  "name": "NOP",
   "len": 1,
   "kind": "fixed",
   "operand_end": 0
  },
  "0x20": {
   "handler": 4350832,
+  "name": "ENEMY",
   "len": 24,
   "kind": "fixed",
   "operand_end": 0
  },
  "0x21": {
   "handler": 4351405,
+  "name": "BEHAVIOR_CALL",
   "len": 8,
   "kind": "behavior-script call: 0x445C74([obj+0x268]+u32[+4], 0, u16[+2]) - same runner as AOT door action-1; choreography; cont.50",
   "operand_end": 0
  },
  "0x22": {
   "handler": 4351596,
+  "name": "BIND_TARGET",
   "len": 4,
   "kind": "task-entity bind: ctx+0xA=rec[1] (kind), ctx+0xB=rec[2] (entity slot) - sets the task's implicit target for slot-implicit ops (0x3a etc.); cont.49",
   "operand_end": 0
  },
  "0x23": {
   "handler": 4351654,
+  "name": "SCENERY",
   "len": 32,
   "kind": "fixed",
   "operand_end": 0
  },
  "0x24": {
   "handler": 4352028,
+  "name": "SET_RESOURCE",
   "len": 8,
   "kind": "fixed",
   "operand_end": 0
  },
  "0x25": {
   "handler": 4352292,
+  "name": "FLAG_SET",
   "len": 4,
   "kind": "fixed",
   "operand_end": 0
  },
  "0x26": {
   "handler": 4352361,
+  "name": "FLAG_TEST",
   "len": 4,
   "kind": "fixed",
   "operand_end": 0
@@ -241,6 +266,7 @@
  },
  "0x28": {
   "handler": 4352627,
+  "name": "AOT",
   "len": 32,
   "kind": "var[32, 36, 40, 44, 48, 52]",
   "operand_end": 0
@@ -253,8 +279,9 @@
  },
  "0x2a": {
   "handler": 4353982,
+  "name": "TARGET_FIELD",
   "len": 8,
-  "kind": "fixed",
+  "kind": "set one field of the bound work target (cont.49 binding); pc+=8; cont.99",
   "operand_end": 0
  },
  "0x2b": {
@@ -277,8 +304,9 @@
  },
  "0x2e": {
   "handler": 4354744,
+  "name": "CAMERA",
   "len": 20,
-  "kind": "fixed",
+  "kind": "camera set: (+2,+4,+6)->0x421F97 position, (+8,+0xA,+0xC)->0x422051 target; pc+=0x14; cont.99",
   "operand_end": 0
  },
  "0x2f": {
@@ -325,14 +353,16 @@
  },
  "0x36": {
   "handler": 4356400,
+  "name": "TARGET_POS",
   "len": 8,
-  "kind": "fixed",
+  "kind": "set the bound work target's xyz; pc+=8; cont.99",
   "operand_end": 0
  },
  "0x37": {
   "handler": 4356695,
+  "name": "TARGET_ROT",
   "len": 8,
-  "kind": "fixed",
+  "kind": "set the bound work target's rotation; pc+=8; cont.99",
   "operand_end": 0
  },
  "0x38": {
@@ -349,18 +379,21 @@
  },
  "0x3a": {
   "handler": 4357647,
+  "name": "BEHAVIOR_INSTALL",
   "len": 12,
   "kind": "behavior install ('brain'): on entity[ctx+0xB] set +0x190=ptr rec+4 (ONE 8-byte param/waypoint record {s16 x,y,z,spare} - per-behavior data, coords not pointers), +0x18F=1 (record COUNT), +0x176=rec[3] (b3 = GROUP-3 COMPLETION-FLAG index, SetFlag(3,b3,1) fires when the behavior completes), dword+0x3C=(rec[2]<<8)|4 (state 4, behavior rec[2]); rec[1] ignored; the activation opcode; cont.49/59",
   "operand_end": 0
  },
  "0x3b": {
   "handler": 4357823,
+  "name": "RELEASE",
   "len": 4,
   "kind": "RELEASE: +0x3C=(rec[1]<<8)|1 - hand entity[ctx+0xB] back to autonomous state-1 with behavior rec[1]; slot 0xA (player) special-cased; cont.59",
   "operand_end": 0
  },
  "0x3c": {
   "handler": 4358002,
+  "name": "OBJ_STATE",
   "len": 8,
   "kind": "fixed",
   "operand_end": 0
@@ -373,6 +406,7 @@
  },
  "0x3e": {
   "handler": 4358673,
+  "name": "VOICE",
   "len": 4,
   "kind": "fixed",
   "operand_end": 0
@@ -433,8 +467,9 @@
  },
  "0x48": {
   "handler": 4359903,
+  "name": "OBJ_FLAG",
   "len": 4,
-  "kind": "fixed",
+  "kind": "object flag: on the resolved target set bit 0x02 when byte[+3]!=0 else clear; pc+=4; cont.16/99",
   "operand_end": 0
  },
  "0x49": {
@@ -457,8 +492,9 @@
  },
  "0x4c": {
   "handler": 4361073,
+  "name": "CAMERA_EX",
   "len": 32,
-  "kind": "fixed",
+  "kind": "camera set (long): (+2,+4,+6)->0x421F97 position, (+0x12,+0x14,+0x16)->0x422051 target; word blocks +8..+0xE and +0x18..+0x1E; pc+=0x20; cont.99",
   "operand_end": 0
  },
  "0x4d": {
@@ -493,6 +529,7 @@
  },
  "0x52": {
   "handler": 4362321,
+  "name": "ITEM_HELD_TEST",
   "len": 4,
   "kind": "fixed",
   "operand_end": 0
@@ -535,20 +572,23 @@
  },
  "0x59": {
   "handler": 4367058,
+  "name": "ENEMY2",
   "len": 20,
   "kind": "pointer-reloc of 3 ptrs @+4/+8/+0xc; pc+=0x14; validated x70",
   "operand_end": 0
  },
  "0x5a": {
   "handler": 4367997,
+  "name": "BEHAVIOR_INSTALL_N",
   "len": null,
   "kind": "VARIABLE len = 4 + 8*byte[pc+3]; validated x28 (see oplen). Multi-record behavior install: 5a <behavior> <b3> <count> + count x 8-byte waypoint records; +0x3C=(rec[1]<<8)|4, +0x176=rec[2], +0x18F=rec[3] (COUNT), +0x190=rec+4 - the patrol/route variant of 0x3a; cont.59",
   "operand_end": 0
  },
  "0x5b": {
   "handler": 4368397,
+  "name": "ENEMY_ENTRANCE",
   "len": 44,
-  "kind": "fixed",
+  "kind": "scripted enemy entrance: slot+1 cat+2 pos+4/+6/+8 rot+0xA model+0xC motion+0x10 (both relocated); nine-state machine on word+0x22 via jump table 0x42B7F0; pc+=0x2C; x127 in 60 rooms; cont.98",
   "operand_end": 0
  },
  "0x5c": {
@@ -601,8 +641,9 @@
  },
  "0x64": {
   "handler": 4373810,
+  "name": "FLOOR_STEP",
   "len": 4,
-  "kind": "fixed",
+  "kind": "floor-zone step: walk [obj+0x26C] stride 0x14 to record byte[+1], store byte[+2] at +0x11; pc+=4; cont.99",
   "operand_end": 0
  },
  "0x65": {
@@ -619,6 +660,7 @@
  },
  "0x67": {
   "handler": 4373973,
+  "name": "TABLE_LOAD",
   "len": 8,
   "kind": "bulk table loader: copies word streams at [obj+0x268]+offset into 6 globals [0x6430E0+i*4], counts {21,21,7,15,14,18,22}; cont.50",
   "operand_end": 0
@@ -673,12 +715,14 @@
  },
  "0x70": {
   "handler": 4862112,
+  "name": "NOP",
   "len": 1,
   "kind": "fixed",
   "operand_end": 0
  },
  "0x71": {
   "handler": 4862112,
+  "name": "NOP",
   "len": 1,
   "kind": "fixed",
   "operand_end": 0
